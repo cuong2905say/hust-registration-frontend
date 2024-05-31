@@ -1,11 +1,11 @@
 import '../css/login_popup.css';
 import {useState} from "react";
-import {login} from "../api/student-api.js";
-import {toast} from "react-toastify";
+import {login} from "../api/auth-api.js";
 
 function LoginPopup() {
     const handleLogin = async ()=>{
-        await login(email, password);
+        const data = await login(email, password);
+        console.log(data)
     }
 
     const [email, setEmail] = useState('');

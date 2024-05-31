@@ -4,3 +4,7 @@ export const login = (email, password) => {
     const data = {email, password};
     return post('/api/v1/auth/login', data)
 }
+
+export const getInfo = ()=> {
+    return post()
+}
