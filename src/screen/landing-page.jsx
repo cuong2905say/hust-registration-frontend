@@ -1,20 +1,46 @@
-import {MDBBtn, MDBContainer} from "mdb-react-ui-kit";
-import LoginPopup from "../component/login-popup.jsx";
-import {Popup} from 'reactjs-popup';
-function LandingPage(){
-    return (
+import {useNavigate} from "react-router-dom";
+import React from "react";
+import LoginPopup from "./login-popup.jsx";
+import '../css/login-button-landing-page.css'
 
-        <MDBContainer >
-            <h1>
-                This is the landing page
-            </h1>
+class LandingPage extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            showPopup: false
+        };
+    }
+    openPopup = ()=>{
+        this.setState({showPopup: true});
+    }
 
-            <Popup modal trigger={<MDBBtn>Đăng nhập</MDBBtn>}>
-                <LoginPopup></LoginPopup>
-            </Popup>
+    closePopup = ()=>{
+        this.setState({showPopup: false});
+    }
 
-        </MDBContainer>
-    )
+
+    handleOnClick = () =>{
+        this.openPopup();
+    }
+
+    render() {
+        const css = {
+            width: '100vw',
+            height: '100vh',
+            backgroundImage: 'url(src/assets/background.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            margin: 0,
+            padding: 0
+        };
+
+        return (
+            <div style={css}>
+                <button onClick={this.handleOnClick} className='button'>Đăng nhập</button>
+                {this.state.showPopup?<LoginPopup closePopup={this.closePopup}/>:<></>}
+            </div>
+        );
+    }
 }
 
 export default LandingPage;
