@@ -4,8 +4,7 @@ import {login} from "../api/auth-api.js";
 
 function LoginPopup() {
     const handleLogin = async ()=>{
-        const data = await login(email, password);
-        console.log(data)
+        await login(email, password);
     }
 
     const [email, setEmail] = useState('');
