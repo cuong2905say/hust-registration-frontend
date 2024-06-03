@@ -40,22 +40,21 @@ class LandingPage extends React.Component {
         console.log(await registerClass('20231', '144999'));
     }
     handleGetClassByCourseId = async () => {
-        console.log(await getClassesByCourseId('20231','TE3050'))
+        console.log(await getClassesByCourseId('20231', 'TE3050'))
     }
 
     render() {
         const css = {
-            width: '100vw',
-            height: '100vh',
-            backgroundImage: 'url(src/assets/background.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            margin: 0,
-            padding: 0
+            backgroundImage: `url(${'src/assets/background.jpeg'})`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            height:"100vh",
+            width:"100vw"
         };
 
         return (
-            <div style={css}>
+            <div style={css} >
                 <button onClick={this.handleOnClick} className='button'>Đăng nhập</button>
                 <button onClick={this.handleGetAllClass}>Get All Classes</button>
                 <button onClick={this.handleGetRegistedCourse}>Get Registed Course</button>

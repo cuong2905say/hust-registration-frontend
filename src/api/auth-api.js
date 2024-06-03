@@ -11,8 +11,7 @@ export const login = (email, password) => {
     let data = client.post('/api/v1/auth/login', {email: email, password: password})
     data
         .then(res => {
-            toast.success("Đăng nhập thành công")
-
+            toast.success("Đăng nhập thành công: "+email)
             localStorage.setItem('email', email)
             localStorage.setItem('password', password)
             localStorage.setItem('access_token', res.data.data.token)
@@ -25,10 +24,6 @@ export const login = (email, password) => {
             toast.error("Đăng nhập thất bại: " + erraaa.response.data.message)
             return undefined
         })
-    if (isSuccess(data)) {
-        console.log('fucking?')
-    }
-
 }
 
 export const getToken = () => {

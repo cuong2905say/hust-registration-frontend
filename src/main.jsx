@@ -5,18 +5,12 @@ import './index.css'
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import {BrowserRouter} from "react-router-dom";
-import {DevSupport} from "@react-buddy/ide-toolbox";
-import {ComponentPreviews, useInitial} from "./dev/index.js";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <BrowserRouter><DevSupport ComponentPreviews={ComponentPreviews}
-                                   useInitialHook={useInitial}
-        >
-
+        <BrowserRouter>
             <App/>
-
-        </DevSupport></BrowserRouter>
+        </BrowserRouter>
     </React.StrictMode>,
 )
