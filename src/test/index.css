@@ -1,0 +1,428 @@
+.modal-content{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font-size: 13px !important;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/assets/background-login.jpeg");
+    background-position: center;
+}
+.modal-header{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font-size: 13px !important;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.close{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    user-select: unset !important;
+    box-sizing: border-box;
+    margin: 0;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    font-family: inherit;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    margin-top: -2px;
+}
+
+.gwt-HTML{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font-size: 13px !important;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+}
+.modal-body{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font-size: 13px !important;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    position: relative;
+    padding: 15px;
+    width: 100%;
+}
+.table{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font-size: 13px !important;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+    width: 100%;
+}
+.text-popup-login{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+}
+.office365-btn{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    box-sizing: border-box;
+    margin: 0;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    font-family: inherit;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    font-size: 16px;
+    margin-bottom: 7px;
+    padding: 5px 25px;
+    outline: none;
+    border-radius: 25px;
+}
+
+.gwt-Image{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font: inherit;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ea3e23;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    border: 0;
+    vertical-align: middle;
+    width: 14px;
+    margin-right: 5px;
+}
+
+.gwt-HTML{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font: inherit;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ea3e23;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+}
+
+.text-popup-login-forgotPassword{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.orLoginByAccount{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.login-user{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font-size: 13px !important;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.texBoxLogin{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    box-sizing: border-box;
+    font: inherit;
+    line-height: inherit;
+    width: 218px;
+    height: 40px;
+    margin: 15px 5px;
+    border: solid 1px white;
+    color: white;
+    display: block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background: transparent;
+    outline: none;
+}
+.gwt-HTML.AFB{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font-size: 13px !important;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    color: red;
+    font-style: italic;
+    font-weight: normal;
+    margin: 10px 0 10px;
+}
+
+.btn-login-user{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font-size: 13px !important;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+.buttonLoading.btn-login{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    box-sizing: border-box;
+    font: inherit;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    line-height: inherit;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 5px;
+    border: none !important;
+    border-radius: 5px;
+    min-width: 80px;
+    color: #AA1D2B;
+    background: white !important;
+    padding: 8px 25px !important;
+    font-weight: 600;
+}
+
+.gwt-HTML.buttonLoading-text{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font: inherit;
+    text-transform: none;
+    cursor: pointer;
+    font-size: inherit;
+    line-height: inherit;
+    color: #AA1D2B;
+    font-weight: 600;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(0);
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.gwt-HTML.buttonLoading-status{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font: inherit;
+    text-transform: none;
+    cursor: pointer;
+    font-size: inherit;
+    line-height: inherit;
+    color: #AA1D2B;
+    font-weight: 600;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
+    text-align: center;
+    overflow: hidden;
+    transform: rotate(45deg);
+    transition: .2s ease-in-out;
+}
+
+.btn-login.NEB{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    box-sizing: border-box;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    display: inline-block;
+    margin: 5px;
+    border: none !important;
+    border-radius: 5px;
+    min-width: 80px;
+    color: #AA1D2B;
+    background: white !important;
+    padding: 8px 25px !important;
+    font-weight: 600;
+}
+
+.btn-link.OEB{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --root-color: #9b0504;
+    font-size: 13px !important;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    line-height: 1.42857143;
+    border-spacing: 0;
+    border-collapse: collapse;
+    user-select: unset !important;
+    font-family: SVN-Poppins;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border-color: transparent;
+    color: white;
+}
