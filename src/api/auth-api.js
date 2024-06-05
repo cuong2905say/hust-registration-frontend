@@ -19,9 +19,9 @@ export const login = (email, password) => {
             localStorage.setItem('role', res.data.data.role)
             return res.data.data.token
         })
-        .catch(erraaa => {
-            console.log(erraaa)
-            toast.error("Đăng nhập thất bại: " + erraaa.response.data.message)
+        .catch(err => {
+            console.log(err)
+            toast.error("Đăng nhập thất bại: " + err.response.data.message)
             return undefined
         })
 }
