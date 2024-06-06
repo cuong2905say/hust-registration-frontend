@@ -2,11 +2,12 @@ import './App.css'
 import {Route, Routes} from "react-router-dom";
 import Error from "./screen/error.jsx";
 import LandingPage from "./screen/landing-page.jsx";
-// import MessagePopup from "./component/message_popup.jsx";
+
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import './css/global.css'
 
-function App() {
+const App = () =>{
     return (
         <>
             <Routes>

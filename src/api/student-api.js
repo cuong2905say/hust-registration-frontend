@@ -1,6 +1,5 @@
 import {client} from "./axios.js";
 import {toast} from "react-toastify";
-import error from "../screen/error.jsx";
 
 export const getRegistedCourse = (semester) => {
     return client.get('/students/courses/register-courses', {
@@ -34,29 +33,26 @@ export const getRegistedClass = (semester) => {
         })
 }
 
-export const registerClass = (semester, classId) => {
-    const classPK = {
-        semester: semester,
-        id: classId
-    }
-    return client.post('/students/classes/register-class', classPK)
-        .then((response) => {
-            console.log(response)
-            return response.data.data
-        })
-        .catch(err => {
-            console.log(err)
-            toast.error("Không thể đăng ký lớp này: " + err.response.data.message)
-        })
-}
-
 export const unRegisterClass = (semester, classId = []) => {
     // todo
 }
 
-export const registerMultipleClass = (semester, classId = []) => {
-    // todo
+export const registerClass = (semester, classIds = []) => {
+    return client.post('/students/classes/register-class',
+        {
+            semester: semester,
+            classIds: classIds
+        }
+    )
+        .then(response => {
+            return response.data.data
+        })
+        .catch(err => {
+            toast.error(err.response.data.message)
+            return undefined
+        })
 }
+
 
 export const registerCourse = (semester, courseIds = []) => {
     return client.post('/students/courses/register-courses', {
