@@ -5,16 +5,14 @@ const LeftPanel = ({ className = "" }) => {
   return (
     <div className={`left-panel ${className}`}>
       <div className="student-info">
-        <div className="arrow-up-1-wrapper">
           <img
             className="arrow-up-1"
             loading="lazy"
             alt=""
-            src="/arrow-up-1.svg"
+            src="/star.svg"
           />
-        </div>
         <div className="m-sinh-vin-container">
-          <span>{` Mã sinh viên : `}</span>
+          <span>{`Mã sinh viên : `}</span>
           <b>20202024</b>
         </div>
       </div>
@@ -24,7 +22,7 @@ const LeftPanel = ({ className = "" }) => {
             className="arrow-up-11"
             loading="lazy"
             alt=""
-            src="/arrow-up-1.svg"
+            src="/star.svg"
           />
         </div>
         <div className="h-v-tn-container">
@@ -40,20 +38,20 @@ const LeftPanel = ({ className = "" }) => {
                 className="arrow-up-12"
                 loading="lazy"
                 alt=""
-                src="/arrow-up-1.svg"
+                src="/star.svg"
               />
               <img
                 className="arrow-up-13"
                 loading="lazy"
                 alt=""
-                src="/arrow-up-1.svg"
+                src="/star.svg"
               />
             </div>
             <img
               className="arrow-up-14"
               loading="lazy"
               alt=""
-              src="/arrow-up-1.svg"
+              src="/star.svg"
             />
           </div>
         </div>
@@ -79,7 +77,7 @@ const LeftPanel = ({ className = "" }) => {
               className="arrow-up-15"
               loading="lazy"
               alt=""
-              src="/arrow-up-1.svg"
+              src="/star.svg"
             />
           </div>
           <u className="thng-tin-danh">Thông tin danh sách lớp mở</u>
@@ -90,7 +88,7 @@ const LeftPanel = ({ className = "" }) => {
               className="arrow-up-2"
               loading="lazy"
               alt=""
-              src="/arrow-up-1.svg"
+              src="/star.svg"
             />
           </div>
           <u className="thng-tin-danh1">Danh sách học phần đã đăng kí</u>

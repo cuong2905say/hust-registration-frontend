@@ -97,7 +97,7 @@
   box-sizing: border-box;
 }
 .button-register-class {
-  flex: 0.3086;
+  /*flex: 0.3086;*/
   box-shadow: 0 0 2px rgba(23, 26, 31, 0.12), 0 8px 17px rgba(23, 26, 31, 0.15);
   border-radius: 2px;
   background-color: #fff;
@@ -105,8 +105,9 @@
   overflow: hidden;
   padding: 7px 75px 7px 77px;
   /*opacity: 0.4;*/
-  min-width: 133px;
+  min-width: 120px;
   white-space: nowrap;
+
 }
 .class-input {
   width: 563px;

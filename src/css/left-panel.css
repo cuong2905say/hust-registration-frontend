@@ -6,11 +6,11 @@
   flex-shrink: 0;
 }
 .arrow-up-1-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 5px 0 0;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: flex-start;*/
+  /*justify-content: flex-start;*/
+  /*padding: 5px 0 0;*/
 }
 .m-sinh-vin-container {
   flex: 1;
