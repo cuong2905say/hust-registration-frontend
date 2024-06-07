@@ -80,7 +80,7 @@
   align-items: flex-start;
   justify-content: center;
   padding: 7px 20px 33px;
-  min-width: 133px;
+  /*min-width: 133px;*/
 }
 .k-lp {
   position: relative;
@@ -340,19 +340,19 @@
   position: relative;
   z-index: 1;
 }
-.table-class-registed {
-  background-color: transparent;
-  border: 1px solid #dee1e6;
-  box-sizing: border-box;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 100%;
-  row-gap: 20px;
-  flex-shrink: 0;
-}
+/*.table-class-registed {*/
+/*  background-color: transparent;*/
+/*  border: 1px solid #dee1e6;*/
+/*  box-sizing: border-box;*/
+/*  overflow: hidden;*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  align-items: flex-start;*/
+/*  justify-content: center;*/
+/*  max-width: 100%;*/
+/*  row-gap: 20px;*/
+/*  flex-shrink: 0;*/
+/*}*/
 .registered-classes1,
 .registration {
   align-self: stretch;
@@ -377,11 +377,6 @@
   font-size: 16px;
   color: #323842;
   font-family: Inter;
-}
-@media screen and (max-width: 1100px) {
-  .table-class-registed {
-    flex-wrap: wrap;
-  }
 }
 @media screen and (max-width: 750px) {
   .registration-input {
