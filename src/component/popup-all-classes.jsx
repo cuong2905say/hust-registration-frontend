@@ -12,6 +12,7 @@ export const AllClassesPopup = () => {
         {Header: "Kì", accessor: row => row.semester + "-" + row.semesterType},
         {Header: "Max SV", accessor: "maxStudent"},
         {Header: "Loại lớp", accessor: "classType"}
+
     ],[])
 
     const {getTableProps, getTableBodyProps, headerGroups, rows, prepareRow}
