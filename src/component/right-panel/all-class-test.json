@@ -1,0 +1,7110 @@
+[
+  {
+    "id": "143520",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 160,
+    "theoryClassId": "143520",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4652",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D9-401",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143521",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 82,
+    "theoryClassId": "143521",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4652",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-502",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143522",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 160,
+    "theoryClassId": "143522",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-501",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143523",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 160,
+    "theoryClassId": "143523",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4152",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D9-501",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143524",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 160,
+    "theoryClassId": "143524",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4262",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-401",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143525",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 82,
+    "theoryClassId": "143525",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4212",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-503",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143526",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 82,
+    "theoryClassId": "143526",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4362",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-503",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143527",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 52,
+    "theoryClassId": "143527",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4542",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-506",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143528",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 44,
+    "theoryClassId": "143528",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3382",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-306",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143529",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143529",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3382",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-304",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143530",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 44,
+    "theoryClassId": "143530",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3382",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-306",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-306",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143531",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143531",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3382",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-302",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-302",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143532",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143532",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3382",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-302",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143533",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 44,
+    "theoryClassId": "143533",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3382",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-306",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143534",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 160,
+    "theoryClassId": "143534",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4409",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-501",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143535",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 160,
+    "theoryClassId": "143535",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4785",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D9-501",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143536",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "143536",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4785",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D9-503",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143537",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 60,
+    "theoryClassId": "143537",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3190",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-502",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143538",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 120,
+    "theoryClassId": "143538",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3190",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-306",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143539",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "143539",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4651",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-502",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143540",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143540",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4062",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-302",
+        "dayOfWeek": 5
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143541",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143541",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4062",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-306",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143542",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143542",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4062",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-306",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143543",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143543",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4062",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-306",
+        "dayOfWeek": 6
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-306",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143544",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143544",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4062",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143545",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143545",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4062",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143546",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143546",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-402",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-402",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143547",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143547",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-403",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-403",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143548",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143548",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-404",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-404",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143549",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143549",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-405",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-405",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143550",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143550",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-406",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-406",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143551",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143551",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-402",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-402",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143552",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143552",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-403",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-403",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143553",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143553",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-404",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-404",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143554",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143554",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-405",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-405",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143555",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143555",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3362",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-304",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-304",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143556",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143556",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3362",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "B1-302",
+        "dayOfWeek": 5
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "B1-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143557",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 43,
+    "theoryClassId": "143557",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3362",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-306",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143558",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 43,
+    "theoryClassId": "143558",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3362",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-306",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-306",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143559",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143559",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3362",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "B1-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143560",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143560",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3362",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-304",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143561",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "",
+    "classType": "THEORY",
+    "status": "OPEN",
+    "courseId": "IT3323",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-407",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143562",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143561",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3323",
+    "timetables": [
+      {
+        "week": "12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-302",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-302",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143563",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143561",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3323",
+    "timetables": [
+      {
+        "week": "12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-302",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143564",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 160,
+    "theoryClassId": "",
+    "classType": "THEORY",
+    "status": "OPEN",
+    "courseId": "IT3323",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-501",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143565",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143564",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3323",
+    "timetables": [
+      {
+        "week": "12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-302",
+        "dayOfWeek": 6
+      },
+      {
+        "week": "12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-302",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143566",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143564",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3323",
+    "timetables": [
+      {
+        "week": "12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-302",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143567",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143564",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3323",
+    "timetables": [
+      {
+        "week": "12-19",
+        "from": "0825",
+        "to": "1145",
+        "place": "D5-302",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143568",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143564",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3323",
+    "timetables": [
+      {
+        "week": "12-19",
+        "from": "0825",
+        "to": "1145",
+        "place": "D5-302",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143569",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143569",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4593",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D9-401",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143570",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143570",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4593",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D9-501",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143571",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 130,
+    "theoryClassId": "143571",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3170",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-106",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143572",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143572",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3170",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-401",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143573",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143573",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3070",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-401",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143574",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143574",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3070",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D9-401",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143575",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143575",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3080",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D9-401",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143576",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143576",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3080",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D9-401",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143577",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143577",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3103",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D9-401",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143578",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143578",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3103",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D9-501",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143579",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143579",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP3110",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-305",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-305",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143580",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143580",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP3110",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-305",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-305",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143581",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143581",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP3110",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-305",
+        "dayOfWeek": 6
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-305",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143582",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143582",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP3110",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-305",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143583",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143583",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP3110",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-305",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143584",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143584",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP3110",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-305",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143585",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143585",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2126",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-502",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-402",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143586",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143586",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2126",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-503",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-403",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143587",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143587",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2126",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-504",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-404",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143588",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143588",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2126",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-505",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-405",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143589",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143589",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2126",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-406",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-506",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143590",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143590",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2126",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-502",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-402",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143591",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143591",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2126",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-503",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-403",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143592",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143592",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2126",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-504",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-404",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143593",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143593",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP2126",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-505",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-405",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143594",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 160,
+    "theoryClassId": "143594",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1131",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-501",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143595",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143595",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1131",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-407",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143596",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143596",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "B1-302",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "B1-302",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143597",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143597",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "B1-302",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143598",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143598",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "B1-302",
+        "dayOfWeek": 6
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "B1-302",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143599",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143599",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "B1-302",
+        "dayOfWeek": 5
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "B1-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143600",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143600",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "B1-302",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143601",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143601",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "B1-302",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143602",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143602",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "B1-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143603",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143603",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "B1-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143604",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143604",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "B1-302",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143605",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143605",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "B1-302",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "B1-302",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143606",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143606",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "B1-302",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143607",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143607",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3230",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "B1-302",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143608",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143608",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3011",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D9-401",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143609",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143609",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3011",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D9-401",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143610",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143610",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3011",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D9-401",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143611",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143611",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4172",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D9-501",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143612",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143612",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4172",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D9-401",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143613",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143613",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4172",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D9-501",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143614",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143614",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3420",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D9-401",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143615",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143615",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3420",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D9-401",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143616",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143616",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3420",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D9-401",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143617",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143617",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-304",
+        "dayOfWeek": 5
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "B1-301",
+        "dayOfWeek": 5
+      },
+      {
+        "week": "3",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-304",
+        "dayOfWeek": 5
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "B1-301",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143618",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143618",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-302",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "B1-301",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-302",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "B1-301",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143619",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143619",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-302",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "B1-301",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143620",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143620",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-302",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "B1-301",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143621",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143621",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-304",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "B1-301",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-304",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "B1-301",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143622",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143622",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-302",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "B1-301",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-302",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "B1-301",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143623",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143623",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-304",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "B1-301",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143624",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143624",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-304",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "B1-301",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143625",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143625",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-302",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "B1-301",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143626",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143626",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-302",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "B1-301",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143627",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143627",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2140",
+    "timetables": [
+      {
+        "week": "3",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-304",
+        "dayOfWeek": 5
+      },
+      {
+        "week": "4-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "B1-301",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143628",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143628",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-402",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-402",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-502",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143629",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143629",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-403",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-403",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-503",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143630",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143630",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-404",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-404",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-504",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143631",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143631",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-405",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-405",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-505",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143632",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143632",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-406",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-406",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-506",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143633",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143633",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-407",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-407",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-507",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143634",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143634",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-502",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-502",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-407",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143635",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143635",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-402",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-402",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-502",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143636",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143636",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-403",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-403",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-503",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143637",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143637",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-404",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-404",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-504",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143638",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143638",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-405",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-405",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-505",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143639",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143639",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-406",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-406",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-506",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143640",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143640",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-407",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-407",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-507",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143641",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 28,
+    "theoryClassId": "143641",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "JP1132",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-502",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-502",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-407",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143642",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 60,
+    "theoryClassId": "143642",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2030",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-502",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143643",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 60,
+    "theoryClassId": "143643",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2030",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-407",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143644",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 60,
+    "theoryClassId": "143644",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2030",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-407",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143645",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 60,
+    "theoryClassId": "143645",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2030",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D9-407",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143646",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "",
+    "classType": "THEORY",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-501",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143647",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143646",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "3,5,7,9,13,15,17,19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-407",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143648",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143646",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "4,6,8,10,12,14,16,18",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-407",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143649",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143646",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "4,6,8,10,12,14,16,18",
+        "from": "1410",
+        "to": "1550",
+        "place": "D9-503",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143650",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "",
+    "classType": "THEORY",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-502",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143651",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143650",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "3,5,7,9,13,15,17,19",
+        "from": "1410",
+        "to": "1550",
+        "place": "D9-502",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143652",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143650",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "4,6,8,10,12,14,16,18",
+        "from": "1410",
+        "to": "1550",
+        "place": "D9-502",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143653",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "",
+    "classType": "THEORY",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1550",
+        "place": "D9-504",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143654",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143653",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "3,5,7,9,13,15,17,19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D9-504",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143655",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143653",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1111",
+    "timetables": [
+      {
+        "week": "4,6,8,10,12,14,16,18",
+        "from": "1600",
+        "to": "1730",
+        "place": "D9-504",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143656",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143656",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1151",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-407",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143657",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143657",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1151",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-503",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143658",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143658",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1151",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D9-501",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143659",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143659",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4132E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-507",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143660",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143660",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4212E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-407",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143661",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143661",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4262E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D9-507",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143662",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143662",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4342E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D9-506",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143663",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143663",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4542E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D9-407",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143664",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143664",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4152E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-407",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143665",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143665",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4142E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D9-506",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143666",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143666",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4652E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D9-507",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143667",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 140,
+    "theoryClassId": "143667",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4015E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D9-501",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143668",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 35,
+    "theoryClassId": "143668",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4062E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-306",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143669",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 35,
+    "theoryClassId": "143669",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4062E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D5-304",
+        "dayOfWeek": 6
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D5-304",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143670",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 35,
+    "theoryClassId": "143670",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4062E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-305",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143671",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 82,
+    "theoryClassId": "143671",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4785E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D9-504",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143672",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 140,
+    "theoryClassId": "143672",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4542E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D9-501",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143673",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 48,
+    "theoryClassId": "143673",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4142E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D9-504",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143674",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 48,
+    "theoryClassId": "143674",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4441E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-407",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143675",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 35,
+    "theoryClassId": "143675",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4735E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D9-503",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143676",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 35,
+    "theoryClassId": "143676",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4651E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-407",
+        "dayOfWeek": 5
+      },
+      {
+        "week": "3-10, 12-20",
+        "from": "0645",
+        "to": "0910",
+        "place": "D9-401",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143677",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 130,
+    "theoryClassId": "143677",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3170E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-401",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143678",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 130,
+    "theoryClassId": "143678",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3070E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-401",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143679",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 120,
+    "theoryClassId": "143679",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3292E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-401",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143680",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143680",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3290E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-305",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143681",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143681",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3290E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-304",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143682",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143682",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3290E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-304",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143683",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 120,
+    "theoryClassId": "143683",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3283E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D9-501",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143684",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143684",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3280E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-302",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143685",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143685",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3280E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-302",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143686",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 38,
+    "theoryClassId": "143686",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3280E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D5-304",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143687",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 150,
+    "theoryClassId": "143687",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1151",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D9-501",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143688",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 60,
+    "theoryClassId": "143688",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2030",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-407",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143689",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 60,
+    "theoryClassId": "143689",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2030",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D9-407",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143690",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143690",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3210",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-407",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143691",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143691",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3220",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D5-305",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143692",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 120,
+    "theoryClassId": "143692",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3020E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-306",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D9-306",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143693",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 130,
+    "theoryClassId": "143693",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI2020E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1410",
+        "to": "1550",
+        "place": "D9-306",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143694",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 65,
+    "theoryClassId": "143694",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI2020E",
+    "timetables": [
+      {
+        "week": "3,5,7,9,13,15,17,19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D9-402",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143695",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 65,
+    "theoryClassId": "143695",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI2020E",
+    "timetables": [
+      {
+        "week": "4,6,8,10,12,14,16,18",
+        "from": "1600",
+        "to": "1730",
+        "place": "D9-402",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143696",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 120,
+    "theoryClassId": "",
+    "classType": "THEORY",
+    "status": "OPEN",
+    "courseId": "PH1110E",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D3-5-201",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143697",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 60,
+    "theoryClassId": "143696",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "PH1110E",
+    "timetables": [
+      {
+        "week": "3,5,7,9,13,15,17,19",
+        "from": "1410",
+        "to": "1550",
+        "place": "D9-503",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143698",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 60,
+    "theoryClassId": "143696",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "PH1110E",
+    "timetables": [
+      {
+        "week": "4,6,8,10,12,14,16,18",
+        "from": "1410",
+        "to": "1550",
+        "place": "D9-503",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143699",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 84,
+    "theoryClassId": "143699",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "SSH1131",
+    "timetables": [
+      {
+        "week": "3-10, 12-19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D9-503",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143700",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 170,
+    "theoryClassId": "143700",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5022",
+    "timetables": []
+  },
+  {
+    "id": "143701",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 65,
+    "theoryClassId": "143701",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5022",
+    "timetables": []
+  },
+  {
+    "id": "143702",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 180,
+    "theoryClassId": "143702",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5022",
+    "timetables": []
+  },
+  {
+    "id": "143703",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143703",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5022",
+    "timetables": []
+  },
+  {
+    "id": "143704",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 100,
+    "theoryClassId": "143704",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5022E",
+    "timetables": []
+  },
+  {
+    "id": "143705",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 100,
+    "theoryClassId": "143705",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5024E",
+    "timetables": []
+  },
+  {
+    "id": "143706",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 100,
+    "theoryClassId": "143706",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5023E",
+    "timetables": []
+  },
+  {
+    "id": "143707",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 100,
+    "theoryClassId": "143707",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5120",
+    "timetables": []
+  },
+  {
+    "id": "143708",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143708",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5120",
+    "timetables": []
+  },
+  {
+    "id": "143709",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143709",
+    "classType": "EXPERIMENT",
+    "status": "OPEN",
+    "courseId": "IT5120E",
+    "timetables": []
+  },
+  {
+    "id": "143800",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143800",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4210",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-101",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143801",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143801",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4490",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-101",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143802",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143802",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4653",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-101",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143803",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143803",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4663",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-101",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143804",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143804",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4735",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-101",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143805",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143805",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4931",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D6-101",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-101",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143806",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143806",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT2030",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1145",
+        "place": "D6-101",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143807",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143807",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4162",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-103",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143808",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143808",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME4508",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-103",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143809",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143809",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME4509",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0730",
+        "to": "0910",
+        "place": "D6-103",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143810",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143810",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4829",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-103",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143811",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143811",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4341",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1145",
+        "place": "D6-103",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143812",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143812",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3426",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-103",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143813",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143813",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4342",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-103",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143814",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143814",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4346",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-103",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143815",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143815",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4348",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D6-103",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-103",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143816",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143816",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET4290",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-102",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143817",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143817",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET3310",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-106",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143818",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143818",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET4020",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-104",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143819",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143819",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET4070",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-106",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143820",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143820",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET4250",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1145",
+        "place": "D6-104",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143821",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143821",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET3180",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-104",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143822",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143822",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI3120",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1145",
+        "place": "D8-309",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143823",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143823",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI4050",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D8-309",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-104",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143824",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143824",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI4100",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-104",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143825",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143825",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI4210",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1145",
+        "place": "D6-104",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143826",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143826",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI4341",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-104",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143827",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 25,
+    "theoryClassId": "143827",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "CH4047",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-102",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143828",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 25,
+    "theoryClassId": "143828",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "CH4030",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-102",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143829",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 25,
+    "theoryClassId": "143829",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "CH4036",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0730",
+        "to": "0910",
+        "place": "D6-102",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-102",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143830",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 25,
+    "theoryClassId": "143830",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "CH4008",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-102",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143831",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 25,
+    "theoryClassId": "143831",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "CH4040",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-102",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143832",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143832",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3040",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-103",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143833",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143833",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3180",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D6-103",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143834",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143834",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3080",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-103",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143835",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143835",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3090",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-103",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143836",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143836",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3170",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1645",
+        "place": "D6-101",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143837",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143837",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE2031",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-103",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143838",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143838",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3110",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-103",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143839",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143839",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3140",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-103",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143840",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143840",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3410",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-103",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143841",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143841",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3480",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-103",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143842",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143842",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3491",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-103",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143843",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143843",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1107",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1315",
+        "to": "1645",
+        "place": "D4-307",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143844",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 160,
+    "theoryClassId": "143844",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EM1010",
+    "timetables": [
+      {
+        "week": "4,6,8,10,12,14,16,18",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-407",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143845",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 168,
+    "theoryClassId": "",
+    "classType": "THEORY",
+    "status": "OPEN",
+    "courseId": "PH1120",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1550",
+        "place": "D6-306",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143846",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143845",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "PH1120",
+    "timetables": [
+      {
+        "week": "4,6,8,10,12,14,16,18",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-303",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143847",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143845",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "PH1120",
+    "timetables": [
+      {
+        "week": "3,5,7,9,13,15,17,19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-303",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143848",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143845",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "PH1120",
+    "timetables": [
+      {
+        "week": "4,6,8,10,12,14,16,18",
+        "from": "1600",
+        "to": "1730",
+        "place": "D6-303",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143849",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 42,
+    "theoryClassId": "143845",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "PH1120",
+    "timetables": [
+      {
+        "week": "3,5,7,9,13,15,17,19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D6-303",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143850",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 140,
+    "theoryClassId": "",
+    "classType": "THEORY",
+    "status": "OPEN",
+    "courseId": "MI2020",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-306",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143851",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 70,
+    "theoryClassId": "143850",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI2020",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D8-208",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143852",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 70,
+    "theoryClassId": "143850",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI2020",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D8-208",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143853",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143853",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3020",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-302",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143854",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143854",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI3052",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-302",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143855",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143855",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE2021",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-302",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143856",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143856",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE2000",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-302",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143857",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143857",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "PH3330",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143858",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143858",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET2030",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-303",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143859",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 45,
+    "theoryClassId": "143859",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME2011",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D8-201",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143860",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 45,
+    "theoryClassId": "143860",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME2112",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D8-201",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143861",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 45,
+    "theoryClassId": "143861",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME2101",
+    "timetables": [
+      {
+        "week": "3,5,7,9,13,15,17,19",
+        "from": "0730",
+        "to": "0910",
+        "place": "D6-302",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143862",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 45,
+    "theoryClassId": "143862",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE2012",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-302",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143863",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 45,
+    "theoryClassId": "143863",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME2030",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-302",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143864",
+    "semester": "20231",
+    "semesterType": "A",
+    "maxStudent": 15,
+    "theoryClassId": "143864",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1408",
+    "timetables": [
+      {
+        "week": "3-10",
+        "from": "1315",
+        "to": "1645",
+        "place": "D4-Lab-506",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143865",
+    "semester": "20231",
+    "semesterType": "A",
+    "maxStudent": 15,
+    "theoryClassId": "143865",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1408",
+    "timetables": [
+      {
+        "week": "3-10",
+        "from": "0730",
+        "to": "1100",
+        "place": "D4-Lab-506",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143866",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143866",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "TE5840",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-104",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143867",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143867",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "TE5880",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D6-104",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143868",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143868",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "TE5820",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-102",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143869",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143869",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "TE5860",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-104",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143870",
+    "semester": "20231",
+    "semesterType": "A",
+    "maxStudent": 20,
+    "theoryClassId": "143870",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1408",
+    "timetables": [
+      {
+        "week": "3-10",
+        "from": "0730",
+        "to": "1100",
+        "place": "D4-Lab-506",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143871",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143871",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4604",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-105",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143872",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143872",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4605",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-101",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143873",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143873",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4607",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-105",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143874",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143874",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4608",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-101",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143875",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143875",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4616",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1550",
+        "place": "D6-101",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143876",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 30,
+    "theoryClassId": "143876",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4611",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-105",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143877",
+    "semester": "20231",
+    "semesterType": "A",
+    "maxStudent": 15,
+    "theoryClassId": "143877",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1408",
+    "timetables": [
+      {
+        "week": "3-10",
+        "from": "0730",
+        "to": "1100",
+        "place": "D4-Lab-506",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143878",
+    "semester": "20231",
+    "semesterType": "A",
+    "maxStudent": 15,
+    "theoryClassId": "143878",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1408",
+    "timetables": [
+      {
+        "week": "3-10",
+        "from": "1315",
+        "to": "1645",
+        "place": "D4-Lab-506",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143879",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143879",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET4140",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-104",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143880",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143880",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4694",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-104",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143881",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143881",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET4091",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D6-104",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143882",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143882",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ET4250",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1550",
+        "place": "D6-102",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143883",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143883",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT5384",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D6-102",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-104",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143884",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143884",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4324",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-102",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143885",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 15,
+    "theoryClassId": "143885",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4240",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-407",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143886",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143886",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1406",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D4-Lab-507",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143887",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143887",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME4531",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D6-105",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143888",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143888",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MSE4004",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D6-105",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143889",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143889",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "TE4870",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-102",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143890",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143890",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "TE4900",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-105",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143891",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143891",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "TE5830",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-105",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143892",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143892",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "TE5870",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-105",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143893",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143893",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1406",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D4-Lab-507",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143894",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143894",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4594",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-205",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143895",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143895",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3034",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D6-205",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143896",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143896",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3676",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1145",
+        "place": "D6-205",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143897",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143897",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3649",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-205",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143898",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143898",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE4226",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D6-205",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-205",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143899",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143899",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3196",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-105",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143900",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 90,
+    "theoryClassId": "143900",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI2054",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-107",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143901",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143901",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1404",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-104",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D6-104",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143902",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143902",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1404",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-105",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D6-105",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143903",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 18,
+    "theoryClassId": "143903",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1404",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-205",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D6-205",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143904",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 18,
+    "theoryClassId": "143904",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1404",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-206",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1600",
+        "to": "1730",
+        "place": "D6-206",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143905",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143905",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3014",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-303",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143906",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143906",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI3014",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1550",
+        "place": "D6-303",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143907",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143907",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3616",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D6-303",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-303",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143908",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143908",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3094",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-105",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143909",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143909",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3596",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-303",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143910",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143910",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3617",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-105",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143911",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "143911",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "TE3600",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-107",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143912",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143912",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME2031",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-404",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143913",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143913",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME4263",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-205",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143915",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143915",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1501",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-206",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "0730",
+        "to": "0910",
+        "place": "D6-205",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143916",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 23,
+    "theoryClassId": "143916",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1501",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-303",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "0730",
+        "to": "0910",
+        "place": "D6-303",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143917",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143917",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EM1014",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-303",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143918",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 55,
+    "theoryClassId": "",
+    "classType": "THEORY",
+    "status": "OPEN",
+    "courseId": "MI1034",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1145",
+        "place": "D6-303",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143919",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 55,
+    "theoryClassId": "143918",
+    "classType": "EXERCISE",
+    "status": "OPEN",
+    "courseId": "MI1034",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-303",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143920",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 50,
+    "theoryClassId": "143920",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "CH1014",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-303",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D6-303",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143921",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 55,
+    "theoryClassId": "143921",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "PH1024",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-303",
+        "dayOfWeek": 4
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-303",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143922",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 45,
+    "theoryClassId": "143922",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME2020",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0825",
+        "to": "1005",
+        "place": "D8-201",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143923",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143923",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3423",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D8-407",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143924",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143924",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4756",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-105",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143925",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143925",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4490",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1550",
+        "place": "D6-205",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143926",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 170,
+    "theoryClassId": "143926",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4409",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D6-407",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143927",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143927",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4441",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1550",
+        "place": "D6-105",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143928",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143928",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4501",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D6-301",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143929",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143929",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4785",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1505",
+        "to": "1730",
+        "place": "D6-301",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143930",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143930",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1606",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-105",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143931",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143931",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1606",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-206",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143932",
+    "semester": "20231",
+    "semesterType": "A",
+    "maxStudent": 20,
+    "theoryClassId": "143932",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1607",
+    "timetables": [
+      {
+        "week": "3-10",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-101",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143933",
+    "semester": "20231",
+    "semesterType": "A",
+    "maxStudent": 20,
+    "theoryClassId": "143933",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1607",
+    "timetables": [
+      {
+        "week": "3-10",
+        "from": "1015",
+        "to": "1145",
+        "place": "D6-302",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143934",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143934",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT3180",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D8-301",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143935",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 18,
+    "theoryClassId": "143935",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1604",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1645",
+        "place": "D6-205",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1315",
+        "to": "1455",
+        "place": "D6-205",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143936",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 18,
+    "theoryClassId": "143936",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1604",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1645",
+        "place": "D6-206",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1315",
+        "to": "1455",
+        "place": "D6-206",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143937",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 18,
+    "theoryClassId": "143937",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "FL1604",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1645",
+        "place": "D4-309",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "1315",
+        "to": "1455",
+        "place": "D4-309",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143938",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "143938",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME4006",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D8-208",
+        "dayOfWeek": 2
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "0730",
+        "to": "0910",
+        "place": "D8-208",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143939",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "143939",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME4176",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D8-208",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143940",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "143940",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "EE3766",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D8-208",
+        "dayOfWeek": 3
+      },
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D8-208",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143941",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "143941",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME3086",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "1005",
+        "place": "D8-208",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143942",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "143942",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME4216",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1015",
+        "to": "1145",
+        "place": "D8-208",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143943",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143943",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MSE4406",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0730",
+        "to": "0910",
+        "place": "D6-206",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143944",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143944",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MSE4416",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0910",
+        "place": "D6-105",
+        "dayOfWeek": 6
+      }
+    ]
+  },
+  {
+    "id": "143945",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143945",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "MSE4507",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0920",
+        "to": "1145",
+        "place": "D6-206",
+        "dayOfWeek": 5
+      }
+    ]
+  },
+  {
+    "id": "143946",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 20,
+    "theoryClassId": "143946",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME2026",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "0645",
+        "to": "0815",
+        "place": "D8-201",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143947",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 80,
+    "theoryClassId": "143947",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "IT4162",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D8-302",
+        "dayOfWeek": 3
+      }
+    ]
+  },
+  {
+    "id": "143948",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143948",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME2021",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1410",
+        "to": "1730",
+        "place": "D8-301",
+        "dayOfWeek": 2
+      }
+    ]
+  },
+  {
+    "id": "143949",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143949",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME4508",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1455",
+        "place": "D4-305",
+        "dayOfWeek": 4
+      }
+    ]
+  },
+  {
+    "id": "143950",
+    "semester": "20231",
+    "semesterType": "AB",
+    "maxStudent": 40,
+    "theoryClassId": "143950",
+    "classType": "THEORY_EXERCISE",
+    "status": "OPEN",
+    "courseId": "ME4509",
+    "timetables": [
+      {
+        "week": "3-10,12-19",
+        "from": "1230",
+        "to": "1400",
+        "place": "D8-301",
+        "dayOfWeek": 2
+      }
+    ]
+  }
+]

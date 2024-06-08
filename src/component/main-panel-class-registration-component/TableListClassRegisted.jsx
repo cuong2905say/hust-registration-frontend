@@ -1,12 +1,13 @@
-import '../../css/table-list-class-registed.css'
+import '../../css/TableListClassRegisted.css'
 import {useSortBy, useTable} from "react-table/src";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheck} from "@fortawesome/free-solid-svg-icons";
+import {getRegistedClass} from "../../api/StudentApi.js";
 
-const TableTest = ({jsonData}) => {
+const TableTest = ({semester}) => {
     const [selectedRows, setSelectedRows] = useState([]);
-
+    const [data, setData] = React.useState([]);
     const handleCheckboxChange = (rowId, checked) => {
         if (checked) {
             setSelectedRows([...selectedRows, rowId]);
@@ -16,14 +17,26 @@ const TableTest = ({jsonData}) => {
         }
     };
 
-    const data = React.useMemo(() => jsonData, [])
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await getRegistedClass('20231');
+            console.log(data)
+            setData(data)
+        }
+        fetchData()
+
+    }, []);
+
+
+    // const data = React.useMemo(() => jsonData, [])
+    // console.log(data)
     const columns = React.useMemo(() => [
         {
-            Header: "Mã học phần",
+            Header: "Mã HP",
             accessor: "class.course.id",
         },
         {
-            Header: "Tên học phần",
+            Header: "Tên HP",
             accessor: (row) => row.class.course.courseName || row.class.course.courseNameE
         },
         {

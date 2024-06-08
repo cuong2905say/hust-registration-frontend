@@ -1,9 +1,16 @@
 import PropTypes from "prop-types";
-import "../../css/left-panel.css";
+import "../../css/LeftPanel.css";
 import {Button} from "@mui/material";
-import React from "react";
+import React, {useState} from "react";
 
-const LeftPanel = (props) => {
+const LeftPanel = ({openListClassPopup,onChangeStudentId}) => {
+
+    const [studentId,setChangeStudentId] = useState('20204524');
+
+    const handleChangeStudentId = (e)=>{
+        setChangeStudentId(e.target.value);
+    }
+
     return (
         <div className={`left-panel`}>
             <div className="student-info">
@@ -15,7 +22,10 @@ const LeftPanel = (props) => {
                 />
                 <div className="m-sinh-vin-container">
                     <span>{`Mã sinh viên : `}</span>
-                    <b>20202024</b>
+                    <input
+                        onChange={handleChangeStudentId}
+                        type={"number"}
+                        onKeyDown={e => {if(e.key==='Enter'){onChangeStudentId(studentId)}}}></input>
                 </div>
             </div>
             <div className="student-info1">
@@ -82,7 +92,7 @@ const LeftPanel = (props) => {
                             src="/star.svg"
                         />
                     </div>
-                    <Button onClick={props.openPopup}>
+                    <Button onClick={openListClassPopup}>
                         <u className="thng-tin-danh">Thông tin danh sách lớp mở</u>
                     </Button>
                 </div>

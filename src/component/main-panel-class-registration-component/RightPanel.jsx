@@ -1,33 +1,29 @@
 import PropTypes from "prop-types";
-import "../../css/registration.css";
 import {Button} from "@mui/material";
 import React, {useEffect, useState} from "react";
-import TableTest from "./table-list-class-registed.jsx";
-import {getRegistedClass} from "../../api/student-api.js";
+import TableTest from "./TableListClassRegisted.jsx";
+import {SemesterSelector} from "../right-panel/SemesterSelector.jsx";
 
-const Registration = (props) => {
+const RightPanel = ({
+                        onChangeTextField,
+                        globalOnChangeSemesterValue,
+                        semesterValue}) => {
     const [text, setText] = useState("");
 
-
     const handleChangeTextClassId = (e) => {
-        props.onChangeTextField(e)
+        onChangeTextField(e)
         setText(e.target.value);
     };
 
-
-    const [dataClassRegisted, setDataClassRegisted] = useState([]);
-    useEffect(() => {
-        const fetchData = async () => {
-            setDataClassRegisted(await getRegistedClass('20231'))
-        }
-        fetchData();
-    }, []);
-
+    const onChangeSemesterValue = (e) => {
+        globalOnChangeSemesterValue(e)
+    }
     return (
         <div className={`registration`}>
-            <button className="container-trang-dang-ki-sv">
-                <b className="registration-input">TRANG ĐĂNG KÝ SINH VIÊN</b>
-            </button>
+            <SemesterSelector value = {semesterValue} onChangeValue={onChangeSemesterValue} className={'selector-semester'}/>
+            <div className="container-trang-dang-ki-sv">
+                <b className="text-trang-dk-sv">TRANG ĐĂNG KÝ SINH VIÊN</b>
+            </div>
             <div className="class-input">
                 <div className="registered-classes">
                     <div className="table-title">Đăng ký mã lớp</div>
@@ -42,14 +38,14 @@ const Registration = (props) => {
                 </Button>
             </div>
             <div className="registered-classes1">
-                <TableTest jsonData={dataClassRegisted}/>
+                <TableTest semester={'20231'}/>
             </div>
         </div>
     );
 };
 
-Registration.propTypes = {
+RightPanel.propTypes = {
     className: PropTypes.string,
 };
 
-export default Registration;
+export default RightPanel;

@@ -1,5 +1,5 @@
 import axios from "axios";
-import {getToken} from "./auth-api.js";
+import {getToken} from "./AuthApi.js";
 
 export const client = axios.create({
     baseURL: 'http://localhost:8081',
