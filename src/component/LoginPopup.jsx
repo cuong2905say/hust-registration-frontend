@@ -1,16 +1,7 @@
-import "../css/LoginPopup.css";
-import { useState } from "react";
-import { login } from "../api/AuthApi.js";
-import { useNavigate } from "react-router-dom";
-import {
-    Box,
-    Button,
-    Divider,
-    Link,
-    Modal,
-    TextField,
-    Typography,
-} from "@mui/material";
+import {useState} from "react";
+import {login} from "../api/AuthApi.js";
+import {useNavigate} from "react-router-dom";
+import {Box, Button, Divider, Icon, Link, Modal, TextField, Typography,} from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
 const style = {
@@ -24,7 +15,7 @@ const style = {
     boxShadow: 24,
 };
 
-function LoginPopup({ showPopup, closePopup }) {
+function LoginPopup({showPopup, closePopup}) {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -55,11 +46,11 @@ function LoginPopup({ showPopup, closePopup }) {
                     <Typography color="white" fontSize={20}>
                         Đăng nhập
                     </Typography>
-                    <Typography>
-                        <CloseIcon sx={{ color: "white" }} onClick={closePopup} />
-                    </Typography>
+                    <Button>
+                        <CloseIcon sx={{color: "white"}} onClick={closePopup}/>
+                    </Button>
                 </Box>
-                <Divider color="white" />
+                <Divider color="white"/>
                 <Typography
                     textAlign="center"
                     color="white"
@@ -84,6 +75,7 @@ function LoginPopup({ showPopup, closePopup }) {
                             fontWeight: "bold",
                         }}
                     >
+                        <img src={"https://qldt.hust.edu.vn/images/office-365.svg"} style={{width:'15px', marginRight:'5px'}} alt={''}></img>
                         Office 365
                     </Button>
                 </Box>
@@ -98,10 +90,10 @@ function LoginPopup({ showPopup, closePopup }) {
                         Quên mật khẩu?
                     </Typography>
                 </Link>
-                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Box sx={{display: "flex", justifyContent: "center"}}>
                     <TextField
-                        type="text"
-                        placeholder="Tài khoản đăng nhập"
+                        type="email"
+                        label="Tài khoản đăng nhập"
                         value={email}
                         size="small"
                         onChange={(e) => setEmail(e.target.value)}
@@ -111,16 +103,31 @@ function LoginPopup({ showPopup, closePopup }) {
                             }
                         }}
                         margin="normal"
-                        style={{
-                            backgroundColor: "white",
+                        sx={{
+                            backgroundColor: "inherit",
+                            borderColor: 'white',
+                            outlineColor:'white',
+                            color: 'white',
                             borderRadius: "5px",
+                            "& .MuiOutlinedInput-notchedOutline":{
+                                borderColor:'white',
+                                color:'white'
+                            },
+
+                            "& .MuiOutlinedInput-outlined":{
+                                borderColor:'white',
+                                color:'white'
+                            },
+                            input: {
+                                color: 'white'
+                            }
                         }}
                     />
                 </Box>
-                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Box sx={{display: "flex", justifyContent: "center"}}>
                     <TextField
-                        type="text"
-                        placeholder="Mật khẩu đăng nhập"
+                        type="password"
+                        label="Mật khẩu đăng nhập"
                         size="small"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
@@ -130,9 +137,24 @@ function LoginPopup({ showPopup, closePopup }) {
                             }
                         }}
                         margin="normal"
-                        style={{
-                            backgroundColor: "white",
+                        sx={{
+                            backgroundColor: "inherit",
+                            borderColor: 'white',
+                            outlineColor:'white',
+                            color: 'white',
                             borderRadius: "5px",
+                            "& .MuiOutlinedInput-notchedOutline":{
+                                borderColor:'white',
+                                color:'white'
+                            },
+
+                            "& .MuiOutlinedInput-outlined":{
+                                borderColor:'white',
+                                color:'white'
+                            },
+                            input: {
+                                color: 'white'
+                            }
                         }}
                     />
                 </Box>
@@ -158,7 +180,7 @@ function LoginPopup({ showPopup, closePopup }) {
                     </Button>
                     <Button
                         variant="contained"
-                        sx={{ marginRight: "15px", backgroundColor: "white" }}
+                        sx={{marginRight: "15px", backgroundColor: "white"}}
                         onClick={closePopup}
                     >
                         <Typography color="#AA1D2B" textTransform="none">

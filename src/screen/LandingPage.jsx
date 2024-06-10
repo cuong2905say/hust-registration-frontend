@@ -1,56 +1,26 @@
 import React from "react";
-import LoginPopup from "./LoginPopup.jsx";
-import '../css/LoginButtonLandingPage.css'
-import {getAllClass} from "../api/PublicApi.js";
-import {getRegistedClass, getRegistedCourse, registerClass} from "../api/StudentApi.js";
-import {getClassesByCourseId} from "../api/CommonApi.js";
-import {getClassStudentRegisted, getCourseStudentRegisted} from "../api/AdminApi.js";
+import LoginPopup from "../component/LoginPopup.jsx";
+import {Box, Button} from "@mui/material";
 
 class LandingPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showPopup: false
+            showPopup: false,
         };
     }
 
     openPopup = () => {
         this.setState({showPopup: true});
-    }
+    };
 
     closePopup = () => {
         this.setState({showPopup: false});
-    }
-
+    };
 
     handleOnClick = () => {
         this.openPopup();
-    }
-
-    handleGetAllClass = async () => {
-        console.log(await getAllClass('20231'))
-    }
-
-    handleGetRegistedCourse = async () => {
-        console.log(await getRegistedCourse('20231'));
-    }
-    handleGetRegistedClass = async () => {
-        console.log(await getRegistedClass('20231'));
-    }
-    handleRegisterclass = async () => {
-        console.log(await registerClass('20231', ['144999']));
-    }
-    handleGetClassByCourseId = async () => {
-        console.log(await getClassesByCourseId('20231', 'TE3050'))
-    }
-
-    handleGetClassByStudentEmailOfAdmin = async() => {
-        console.log(await getClassStudentRegisted('a','20231'))
-    }
-
-    handleGetCourseByStudentEmailOfAdmin = async() => {
-        console.log(await getCourseStudentRegisted('a','20231'))
-    }
+    };
 
     render() {
         const css = {
@@ -58,30 +28,23 @@ class LandingPage extends React.Component {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            height:"100vh",
-            width:"100vw"
+            height: "100vh",
+            width: "100%",
         };
 
         return (
-            <div style={css}>
-                <button onClick={this.handleOnClick} className='button'>Đăng nhập</button>
-                {/*<button onClick={this.handleGetAllClass}>Get All Classes</button>*/}
-                {/*<button onClick={this.handleGetRegistedCourse}>Get Registed Course</button>*/}
-                {/*<button onClick={this.handleGetRegistedClass}>Get Registed Class</button>*/}
-                {/*<button onClick={this.handleRegisterclass}>Register Class</button>*/}
-                {/*<button onClick={this.handleGetClassByCourseId}>Get Classes By Course Id</button>*/}
-                {/*<button onClick={this.handleGetClassByStudentEmailOfAdmin}>Get Classes Registed By Student</button>*/}
-                {/*<button onClick={this.handleGetCourseByStudentEmailOfAdmin}>Get Courses Registed By Student</button>*/}
-                {/*{this.state.showPopup ? <LoginPopup closePopup={this.closePopup}/> : <></>}*/}
+            <Box style={css}>
+                <Box sx={{display: "flex", justifyContent: "flex-end" ,padding:5}}>
+                    <Button onClick={this.handleOnClick} variant={"outlined"} sx={{color:'white', borderColor: 'white',}}>
+                        Đăng nhập
+                    </Button>
+                </Box>
+
                 <LoginPopup
                     closePopup={this.closePopup}
                     showPopup={this.state.showPopup}
                 />
-            </div>
-            // <MainPage/>
-            // <div>
-            //     <input type="number" className={"text"}/>
-            // </div>
+            </Box>
         );
     }
 }

@@ -38,6 +38,7 @@ export const unRegisterClass = async (semester, classIds = []) => {
                 classIds: classIds
             }
         })
+        toast.success("Hủy lớp thành công, mã lớp: " + classIds)
         return data.data
     } catch (err) {
         toast.error(err.response.data.message);
@@ -54,6 +55,7 @@ export const registerClass = async (semester, classIds = []) => {
                 classIds: classIds
             }
         )
+        toast.success("Đăng ký thành công, mã lớp: " + classIds)
         return data.data
     } catch (err) {
         toast.error(err.response.data.message)
@@ -77,7 +79,7 @@ export const registerCourse = async (semester, courseIds = []) => {
 
 export const getRegistedCourses = async (semester) => {
     try {
-        const {data} = await client.get('/register-courses', {
+        const {data} = await client.get('/students/courses/register-courses', {
             params: {
                 semester: semester
             }
