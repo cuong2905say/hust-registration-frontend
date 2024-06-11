@@ -34,7 +34,7 @@ export const TextFieldAddClass = ({value,handleChangeListClassIdSelected, dataAl
                 renderInput={(params) => (
                     <TextField
                         {...params}
-                        type="number"
+                        type="tel"
                         variant="filled"
                         label="Mã lớp"
                         placeholder="Nhập mã lớp"

@@ -8,18 +8,19 @@ import TableListClassRegisted from "./right-panel/TableListClassRegisted.jsx";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle.js";
 
 const RightPanel = ({
-                        globalOnChangeSemesterValue,
+                        handleChangeSemesterValue,
                         semester,
-                        dataAllClass
+                        dataAllClass,
+                        studentInfo
                     }) => {
-    const [selectedRowTableClassRegisted,setSelectedRowTableClassRegisted] = useState([])
+    const [selectedRowTableClassRegisted, setSelectedRowTableClassRegisted] = useState([])
 
     const [selectedClassIdToRegister, setSelectedClassIdToRegister] = useState([]);
 
     const [dataClassRegisted, setDataClassRegisted] = useState([])
 
     const onChangeSemesterValue = (e) => {
-        globalOnChangeSemesterValue(e);
+        handleChangeSemesterValue(e);
     };
     const fetchDataClassRegisted = async (semester) => {
         const data = await getRegistedClass(semester);
@@ -56,15 +57,12 @@ const RightPanel = ({
     };
 
     useEffect(() => {
-        console.log(dataClassRegisted)
         fetchDataClassRegisted(semester)
-    }, []);
+    }, [semester]);
 
     const handleClickButtonRegistedClass = async () => {
         await registerClass(semester, selectedClassIdToRegister)
-
         await fetchDataClassRegisted(semester)
-        // setSelectedClassIdToRegister([])
     }
 
     const handleClickButtonDeleteClass = async () => {
@@ -86,8 +84,7 @@ const RightPanel = ({
                 </Typography>
                 <SemesterSelector
                     value={semester}
-                    onChangeValue={onChangeSemesterValue}
-                    className={"selector-semester"}
+                    onChangeValue={e => onChangeSemesterValue(e.target.value)}
                 />
             </Box>
             <Box
@@ -125,7 +122,8 @@ const RightPanel = ({
                     alignItems: "center",
                 }}
             >
-                <Button disabled={selectedRowTableClassRegisted.length===0} variant="contained" color="error" size="small" onClick={handleClickButtonDeleteClass}>
+                <Button disabled={selectedRowTableClassRegisted.length === 0} variant="contained" color="error"
+                        size="small" onClick={handleClickButtonDeleteClass}>
                     Xoá các lớp đã chọn
                 </Button>
             </Box>

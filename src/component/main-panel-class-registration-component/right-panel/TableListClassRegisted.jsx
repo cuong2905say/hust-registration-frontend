@@ -9,57 +9,72 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
             field: "courseId",
             headerName: "Mã HP",
             width: 120,
+            headerClassName: 'super-app-theme--header'
         },
         {
             field: "courseName",
             headerName: "Tên HP",
             width: 200,
+            headerClassName: 'super-app-theme--header'
         },
         {
             field: "credit",
             headerName: "Số TC",
             width: 70,
+            headerClassName: 'super-app-theme--header'
         },
         {
             field: "need",
             headerName: "Cần TN",
             width: 120,
-            renderCell: (params) => params.value
+            renderCell: (params) => params.value,
+            headerClassName: 'super-app-theme--header'
         },
         {
             field: "classId",
             headerName: "Mã lớp",
             width: 120,
+            headerClassName: 'super-app-theme--header',
         },
         {
             field: "theoryClassId",
             headerName: "Mã lớp kèm",
             width: 120,
+            headerClassName: 'super-app-theme--header',
         },
         {
             field: "classType",
             headerName: "Loại lớp",
             width: 150,
+            headerClassName: 'super-app-theme--header',
         },
         {
             field: "createdTime",
             headerName: "Ngày ĐK",
             width: 200,
+            headerClassName: 'super-app-theme--header',
         },
         {
             field: "status",
             headerName: "Trạng thái lớp",
             width: 120,
+            headerClassName: 'super-app-theme--header',
         },
         {
             field: "createdById",
             headerName: "Người đăng ký",
             width: 120,
+            headerClassName: 'super-app-theme--header',
         },
     ];
 
     return (
-        <Box>
+        <Box sx = {{
+            '& .super-app-theme--header':{
+                backgroundColor: 'rgba(200, 244, 244, 0.238)',
+                fontWeight:'bold'
+            }
+        }}>
             <DataGrid
                 sx={{
                     m: 2,
@@ -79,7 +94,6 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
                     const selectedRowData = dataClassRegisted.filter(row => ids.includes(row.id))
                     setSelectedRowTableClassRegisted(selectedRowData);
                 }}
-
             />
         </Box>
     );

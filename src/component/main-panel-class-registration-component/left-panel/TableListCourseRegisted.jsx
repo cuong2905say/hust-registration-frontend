@@ -2,44 +2,38 @@ import {DataGrid} from "@mui/x-data-grid";
 import React, {useEffect, useState} from "react";
 import {getRegistedCourses} from "../../../api/StudentApi.js";
 
-const TableListCourseRegisted = ({studentEmail}) => {
+const TableListCourseRegisted = ({studentInfo,semester}) => {
 
     const [data, setData] = useState([])
     useEffect(() => {
         const fetchData = async () => {
-            const data = await getRegistedCourses('20231')
-            console.log(data)
+            const data = await getRegistedCourses(semester)
             const newData = data.map(item => {
                 return {
                     id: item.courseId,
-                    courseName: item.course.courseName||item.course.courseNameE
+                    courseName: item.course.courseName||item.course.courseNameE,
+                    credit:item.course.credit
                 }
             })
             setData(newData)
         }
         fetchData()
-    }, []);
+    }, [semester]);
 
     const columns = [
         {field: "id", headerName: "Mã HP", flex: 80},
         {field: "courseName", headerName: "Tên học phần", flex: 240},
+        {field:"credit",headerName: "Số TC",flex: 70}
     ];
 
     return (
         <DataGrid
             rows={data}
             columns={columns}
-            initialState={{
-                pagination: {
-                    paginationModel: {page: 0, pageSize: 10},
-                },
-            }}
-
-            pageSizeOptions={[5,10,20,50, 100]}
             disableColumnFilter
             disableColumnSelector
-            // disableAutosize
             disableColumnMenu
+            disableRowSelectionOnClick
             disableColumnSorting
             onRowClick={(e) => {
                 console.log(e);

@@ -15,16 +15,16 @@ const style = {
     boxShadow: 24,
 };
 
-export const AllClassesPopup = ({onClosePopup, showPopup,data}) => {
+export const AllClassesPopup = ({onClosePopup, showPopup, data,initialFilter}) => {
 
     const columns = [
-        {field: "id", headerName: "Mã lớp", flex:15},
+        {field: "id", headerName: "Mã lớp", flex: 15},
         {field: "courseId", headerName: "Mã HP", flex: 20},
         {field: "theoryClassId", headerName: "Mã lớp kèm", flex: 20},
         {field: "semester", headerName: "Kì", flex: 20},
         {field: "maxStudent", headerName: "Max SV", flex: 10},
         {field: "classType", headerName: "Loại lớp", flex: 25},
-        {field: "status",headerName: "Trạng thái lớp",flex: 20}
+        {field: "status", headerName: "Trạng thái lớp", flex: 20}
     ];
 
     return (
@@ -68,7 +68,6 @@ export const AllClassesPopup = ({onClosePopup, showPopup,data}) => {
                         },
                     }}
                     pageSizeOptions={[5, 10]}
-                    //   checkboxSelection
                 />
             </Box>
         </Modal>

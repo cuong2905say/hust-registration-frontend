@@ -1,15 +1,18 @@
-import {Box, Link, TextField, Typography} from "@mui/material";
-import React, {useState} from "react";
+import {Box, Button, Link, TextField, Typography} from "@mui/material";
+import React, {useEffect, useState} from "react";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
 import TableListCourseRegisted from "./left-panel/TableListCourseRegisted.jsx";
+import {getInfo} from "../../api/UserApi.js";
 
-const LeftPanel = ({openListClassPopup, onChangeStudentId}) => {
+
+const LeftPanel = ({openListClassPopup, studentInfo, fetchStudentData,semester}) => {
     const [studentId, setChangeStudentId] = useState("20204524");
-
     const handleChangeStudentId = (e) => {
         setChangeStudentId(e.target.value);
     };
 
+    if (studentInfo === null)
+        return (<></>)
     return (
         <Box sx={{marginTop: "20px", paddingLeft: "15px"}}>
             <Box
@@ -31,7 +34,7 @@ const LeftPanel = ({openListClassPopup, onChangeStudentId}) => {
                             type="number"
                             onKeyDown={(e) => {
                                 if (e.key === "Enter") {
-                                    onChangeStudentId(studentId);
+                                    fetchStudentData(studentId)
                                 }
                             }}
                             size="small"
@@ -39,7 +42,7 @@ const LeftPanel = ({openListClassPopup, onChangeStudentId}) => {
                         />
                         :
                         <Typography fontSize="14px" fontWeight={"bold"}>
-                            {'20' + localStorage.getItem('email').split('@')[0].slice(-6)}
+                            {'20' + studentInfo.email.split('@')[0].slice(-6)}
                         </Typography>
                 }
             </Box>
@@ -58,7 +61,7 @@ const LeftPanel = ({openListClassPopup, onChangeStudentId}) => {
                 </Typography>
 
                 <Typography fontSize="14px" fontWeight={"bold"}>
-                    {localStorage.getItem('')}
+                    {studentInfo.name || 'Nguyễn Mạnh Cường'}
                 </Typography>
             </Box>
             <Box
@@ -72,8 +75,12 @@ const LeftPanel = ({openListClassPopup, onChangeStudentId}) => {
                 <StarOutlineIcon/>
                 <Typography
                     fontSize="14px"
+                >{`Lớp sinh viên : `}</Typography>
+
+                <Typography
+                    fontSize="14px"
                     fontWeight="bold"
-                >{`Lớp sinh viên:  Khoa học máy tính 04 - K65`}</Typography>
+                >{studentInfo.studentClassName || ` Khoa học máy tính 04 - K65`}</Typography>
             </Box>
             <Box
                 sx={{
@@ -86,8 +93,12 @@ const LeftPanel = ({openListClassPopup, onChangeStudentId}) => {
                 <StarOutlineIcon/>
                 <Typography
                     fontSize="14px"
+                >{`Số tín chỉ tối đa :`}</Typography>
+
+                <Typography
+                    fontSize="14px"
                     fontWeight="bold"
-                >{`Số tín chỉ tối đa: 20`}</Typography>
+                >{studentInfo.maxCredit||`24`}</Typography>
             </Box>
             <Box
                 sx={{
@@ -98,11 +109,11 @@ const LeftPanel = ({openListClassPopup, onChangeStudentId}) => {
                 }}
             >
                 <StarOutlineIcon/>
-                <Link fontSize="14px" fontWeight="bold" onClick={openListClassPopup}>
+                <Button fontSize="14px" fontWeight="bold" onClick={openListClassPopup}>
                     Thông tin danh sách lớp mở
-                </Link>
+                </Button>
             </Box>
-            <TableListCourseRegisted studentEmail='a'/>
+            <TableListCourseRegisted studentInfo={studentInfo} semester={semester}/>
         </Box>
     );
 };
