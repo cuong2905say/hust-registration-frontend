@@ -17,7 +17,6 @@ const MainPage = () => {
 
     const [dataAllClass, setDataAllClass] = useState([]);
 
-
     const [semester, setSemester] = useState(
         localStorage.getItem("semester") || "20231"
     );
@@ -27,7 +26,7 @@ const MainPage = () => {
         setStudentInfo(data)
     }
 
-    const fetchDataAllClasses = async (studentId) => {
+    const fetchDataAllClasses = async () => {
         const data = await getAllClass(semester);
 
         const getClassTypeVietnamese = (type) => {
@@ -60,7 +59,6 @@ const MainPage = () => {
 
 
     useEffect(() => {
-        console.log('use effect data in main page')
         fetchStudentData()
         fetchDataAllClasses()
     }, [semester]);
@@ -68,7 +66,6 @@ const MainPage = () => {
 
     const handleChangeSemesterValue = (semester) => {
         setSemester(semester);
-        console.log('semester changed')
         localStorage.setItem("semester", semester);
     };
 
@@ -89,6 +86,7 @@ const MainPage = () => {
                         handleChangeSemesterValue={handleChangeSemesterValue}
                         semester={semester}
                         dataAllClass={dataAllClass}
+                        studentInfo={studentInfo}
                     />
                 </Grid>
             </Grid>

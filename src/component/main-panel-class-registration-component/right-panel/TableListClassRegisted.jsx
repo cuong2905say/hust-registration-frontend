@@ -3,7 +3,19 @@ import {DataGrid} from "@mui/x-data-grid";
 import {Box} from "@mui/material";
 
 
-const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegisted}) => {
+const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegisted,studentInfo}) => {
+
+    const isRowSelectable= ({row})=>{
+        if(row.classType==='LT'){
+            return false
+        }
+        if(localStorage.getItem('ROLE')==='ROLE_ADMIN'){
+            return true
+        }
+        return row.updatedById === studentInfo.email;
+
+    }
+
     const columns = [
         {
             field: "courseId",
@@ -61,7 +73,7 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
             headerClassName: 'super-app-theme--header',
         },
         {
-            field: "createdById",
+            field: "updatedById",
             headerName: "Người đăng ký",
             width: 120,
             headerClassName: 'super-app-theme--header',
@@ -76,6 +88,7 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
             }
         }}>
             <DataGrid
+                // slots={}
                 sx={{
                     m: 2,
                     boxShadow: 2,
@@ -89,11 +102,14 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
                 columns={columns}
                 pageSizeOptions={[5, 10, 20, 50, 100]}
                 disableColumnFilter
+                disableColumnSorting
                 checkboxSelection
                 onRowSelectionModelChange={(ids) => {
                     const selectedRowData = dataClassRegisted.filter(row => ids.includes(row.id))
                     setSelectedRowTableClassRegisted(selectedRowData);
+                    console.log(selectedRowData)
                 }}
+                isRowSelectable={isRowSelectable}
             />
         </Box>
     );

@@ -2,10 +2,15 @@ import {Box, Button, Typography} from "@mui/material";
 import React, {useEffect, useState} from "react";
 import {SemesterSelector} from "./right-panel/SemesterSelector.jsx";
 import TableListSchedule from "./right-panel/TableListSchedule.jsx";
-import {TextFieldAddClass} from "./right-panel/TextFieldAddClass.jsx";
+import {
+    AutoCompleteSelectClass,
+    AutoCompleteSelectClassToChangeSimilar
+} from "./right-panel/AutoCompleteSelectClass.jsx";
 import {getRegistedClass, registerClass, unRegisterClass} from "../../api/StudentApi.js";
 import TableListClassRegisted from "./right-panel/TableListClassRegisted.jsx";
+import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle.js";
+import {ToolTipChangeSimilarClass, ToolTipDeleteClass, ToolTipRegister} from "./pop-up/ToolTipText.jsx";
 
 const RightPanel = ({
                         handleChangeSemesterValue,
@@ -17,7 +22,13 @@ const RightPanel = ({
 
     const [selectedClassIdToRegister, setSelectedClassIdToRegister] = useState([]);
 
+    const [isOpenTextChangeSimilarClass, setIsOpenTextChangeSimilarClass] = useState(false);
+
     const [dataClassRegisted, setDataClassRegisted] = useState([])
+    const handleClickButtonChangeToSimilarClass = () => {
+        console.log(selectedRowTableClassRegisted)
+        setIsOpenTextChangeSimilarClass(!isOpenTextChangeSimilarClass)
+    }
 
     const onChangeSemesterValue = (e) => {
         handleChangeSemesterValue(e);
@@ -49,7 +60,7 @@ const RightPanel = ({
                 classType: getClassTypeVietnamese(item.class.classType),
                 createdTime: item.createdTime,
                 status: item.class.status,
-                createdById: item.createdById,
+                updatedById: item.updatedById,
             };
         });
 
@@ -59,6 +70,11 @@ const RightPanel = ({
     useEffect(() => {
         fetchDataClassRegisted(semester)
     }, [semester]);
+
+    useEffect(() => {
+        // Đóng text nếu có bất kì thay đổi nào
+        setIsOpenTextChangeSimilarClass(false)
+    }, [selectedRowTableClassRegisted,semester,studentInfo]);
 
     const handleClickButtonRegistedClass = async () => {
         await registerClass(semester, selectedClassIdToRegister)
@@ -95,7 +111,7 @@ const RightPanel = ({
                 }}>
 
                 <Typography marginRight="10px">Đăng ký mã lớp</Typography>
-                <TextFieldAddClass
+                <AutoCompleteSelectClass
                     value={selectedClassIdToRegister}
                     handleChangeListClassIdSelected={setSelectedClassIdToRegister}
                     dataAllClass={dataAllClass}
@@ -105,27 +121,56 @@ const RightPanel = ({
                     variant="text"
                     disabled={selectedClassIdToRegister.length === 0}
                     onClick={handleClickButtonRegistedClass}
-
                 >
                     Đăng ký lớp
                 </Button>
+                <ToolTipRegister/>
             </Box>
             <TableListClassRegisted
                 dataClassRegisted={dataClassRegisted}
                 setSelectedRowTableClassRegisted={setSelectedRowTableClassRegisted}
+                studentInfo={studentInfo}
             />
             <Box
                 sx={{
                     margin: "20px auto",
                     display: "flex",
-                    justifyContent: "center",
+                    justifyContent: "space-around",
                     alignItems: "center",
                 }}
             >
-                <Button disabled={selectedRowTableClassRegisted.length === 0} variant="contained" color="error"
-                        size="small" onClick={handleClickButtonDeleteClass}>
-                    Xoá các lớp đã chọn
-                </Button>
+                <Box>
+
+                    <Button
+                        disabled={selectedRowTableClassRegisted.length === 0}
+                        variant="contained"
+                        color="error"
+                        size="small"
+                        onClick={handleClickButtonDeleteClass}>
+                        Xoá các lớp đã chọn
+                    </Button>
+                    <ToolTipDeleteClass/>
+                </Box>
+                <Box sx={{justifyContent:"center"}}>
+                    {isOpenTextChangeSimilarClass ?
+                        <Box open={isOpenTextChangeSimilarClass&& selectedRowTableClassRegisted.length===1}>
+                            <AutoCompleteSelectClassToChangeSimilar
+                                selectedClass={selectedRowTableClassRegisted[0]}
+                                dataAllClass={dataAllClass}
+                            />
+                        </Box>:<></>
+                    }
+                    <Button
+                        onClick={handleClickButtonChangeToSimilarClass}
+                        sx={{marginLeft: 1}}
+                        size='small'
+                        disabled={selectedRowTableClassRegisted.length !== 1 || selectedRowTableClassRegisted[0].classType === 'LT'}
+                        variant="contained"
+                        color='secondary'>
+                        Thay đổi lớp đã chọn
+                    </Button>
+                    <ToolTipChangeSimilarClass/>
+                </Box>
             </Box>
             <Typography
                 textAlign="left"
@@ -134,10 +179,14 @@ const RightPanel = ({
                 marginBottom="20px"
             >
                 Thời khóa biểu các lớp đã đăng ký
+                <Button>
+                    <ChangeCircleIcon/>
+                </Button>
             </Typography>
             <TableListSchedule semester={"20231"}/>
         </Box>
-    );
+    )
+        ;
 };
 
 export default RightPanel;
