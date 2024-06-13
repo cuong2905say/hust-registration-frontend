@@ -6,11 +6,12 @@ import {
     AutoCompleteSelectClass,
     AutoCompleteSelectClassToChangeSimilar
 } from "./right-panel/AutoCompleteSelectClass.jsx";
-import {getRegistedClass, registerClass, unRegisterClass} from "../../api/StudentApi.js";
+import {changeClassToSimilar, getRegistedClass, registerClass, unRegisterClass} from "../../api/StudentApi.js";
 import TableListClassRegisted from "./right-panel/TableListClassRegisted.jsx";
 import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle.js";
 import {ToolTipChangeSimilarClass, ToolTipDeleteClass, ToolTipRegister} from "./pop-up/ToolTipText.jsx";
+import {toast} from "react-toastify";
 
 const RightPanel = ({
                         handleChangeSemesterValue,
@@ -22,12 +23,20 @@ const RightPanel = ({
 
     const [selectedClassIdToRegister, setSelectedClassIdToRegister] = useState([]);
 
-    const [isOpenTextChangeSimilarClass, setIsOpenTextChangeSimilarClass] = useState(false);
+    const [isOpenDialogChangeClassSimilar, setIsOpenDialogChangeClassSimilar] = useState(false);
+
+    const [classIdToChangeToSimilar, setClassIdToChangeToSimilarClass] = useState(null);
 
     const [dataClassRegisted, setDataClassRegisted] = useState([])
-    const handleClickButtonChangeToSimilarClass = () => {
-        console.log(selectedRowTableClassRegisted)
-        setIsOpenTextChangeSimilarClass(!isOpenTextChangeSimilarClass)
+    const handleClickButtonOpenBoxForChangeToSimilar = () => {
+        setIsOpenDialogChangeClassSimilar(!isOpenDialogChangeClassSimilar)
+    }
+
+    const handleClickButtonChangeToSimilarClass = async ()=>{
+        await changeClassToSimilar(semester,selectedRowTableClassRegisted[0].classId,classIdToChangeToSimilar)
+        setIsOpenDialogChangeClassSimilar(!isOpenDialogChangeClassSimilar)
+        toast.success('Thay đổi thành công lớp: ' + selectedRowTableClassRegisted[0].classId + ' -> ' + classIdToChangeToSimilar)
+        await fetchDataClassRegisted(semester)
     }
 
     const onChangeSemesterValue = (e) => {
@@ -58,12 +67,12 @@ const RightPanel = ({
                 classId: item.classId,
                 theoryClassId: item.class.theoryClassId,
                 classType: getClassTypeVietnamese(item.class.classType),
-                createdTime: item.createdTime,
+                updatedTime: item.updatedTime,
                 status: item.class.status,
                 updatedById: item.updatedById,
             };
         });
-
+        setDataClassRegisted([])
         setDataClassRegisted(newData);
     };
 
@@ -73,7 +82,8 @@ const RightPanel = ({
 
     useEffect(() => {
         // Đóng text nếu có bất kì thay đổi nào
-        setIsOpenTextChangeSimilarClass(false)
+        setIsOpenDialogChangeClassSimilar(false)
+        setClassIdToChangeToSimilarClass(null)
     }, [selectedRowTableClassRegisted,semester,studentInfo]);
 
     const handleClickButtonRegistedClass = async () => {
@@ -115,7 +125,6 @@ const RightPanel = ({
                     value={selectedClassIdToRegister}
                     handleChangeListClassIdSelected={setSelectedClassIdToRegister}
                     dataAllClass={dataAllClass}
-
                 />
                 <Button
                     variant="text"
@@ -152,16 +161,24 @@ const RightPanel = ({
                     <ToolTipDeleteClass/>
                 </Box>
                 <Box sx={{justifyContent:"center"}}>
-                    {isOpenTextChangeSimilarClass ?
-                        <Box open={isOpenTextChangeSimilarClass&& selectedRowTableClassRegisted.length===1}>
+                    {isOpenDialogChangeClassSimilar ?
+                        <Box
+                            sx={{display:"flex"}}
+                            open={isOpenDialogChangeClassSimilar&& selectedRowTableClassRegisted.length===1}>
                             <AutoCompleteSelectClassToChangeSimilar
-                                selectedClass={selectedRowTableClassRegisted[0]}
+                                selectedClassInRegistedTable={selectedRowTableClassRegisted[0]}
                                 dataAllClass={dataAllClass}
+                                onChangeClassId={setClassIdToChangeToSimilarClass}
                             />
+                            <Button
+                                onClick={handleClickButtonChangeToSimilarClass}
+                            >
+                                Thay đổi lớp
+                            </Button>
                         </Box>:<></>
                     }
                     <Button
-                        onClick={handleClickButtonChangeToSimilarClass}
+                        onClick={handleClickButtonOpenBoxForChangeToSimilar}
                         sx={{marginLeft: 1}}
                         size='small'
                         disabled={selectedRowTableClassRegisted.length !== 1 || selectedRowTableClassRegisted[0].classType === 'LT'}
@@ -183,7 +200,7 @@ const RightPanel = ({
                     <ChangeCircleIcon/>
                 </Button>
             </Typography>
-            <TableListSchedule semester={"20231"}/>
+            <Box></Box>
         </Box>
     )
         ;

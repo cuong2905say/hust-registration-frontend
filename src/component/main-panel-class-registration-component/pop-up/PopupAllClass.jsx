@@ -24,7 +24,8 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data,initialFilter}) =
         {field: "semester", headerName: "Kì", flex: 20},
         {field: "maxStudent", headerName: "Max SV", flex: 10},
         {field: "classType", headerName: "Loại lớp", flex: 25},
-        {field: "status", headerName: "Trạng thái lớp", flex: 20}
+        {field: "status", headerName: "Trạng thái lớp", flex: 20},
+        {field: "timetables",headerName: "TKB",flex: 30}
     ];
 
     return (

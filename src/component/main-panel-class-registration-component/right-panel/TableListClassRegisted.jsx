@@ -61,7 +61,7 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
             headerClassName: 'super-app-theme--header',
         },
         {
-            field: "createdTime",
+            field: "updatedTime",
             headerName: "Ngày ĐK",
             width: 200,
             headerClassName: 'super-app-theme--header',
@@ -107,7 +107,6 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
                 onRowSelectionModelChange={(ids) => {
                     const selectedRowData = dataClassRegisted.filter(row => ids.includes(row.id))
                     setSelectedRowTableClassRegisted(selectedRowData);
-                    console.log(selectedRowData)
                 }}
                 isRowSelectable={isRowSelectable}
             />

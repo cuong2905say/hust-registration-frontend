@@ -44,21 +44,19 @@ export const AutoCompleteSelectClass = ({handleChangeListClassIdSelected, dataAl
     );
 }
 
-export const AutoCompleteSelectClassToChangeSimilar = ({selectedClass,handleChangeListClassIdSelected, dataAllClass}) => {
-    console.log(selectedClass)
-    if(!selectedClass){
+export const AutoCompleteSelectClassToChangeSimilar = ({selectedClassInRegistedTable,onChangeClassId, dataAllClass}) => {
+    if(!selectedClassInRegistedTable){
         return <></>
     }
     return (
         <Stack spacing={3} sx={{width: 300}}>
             <Autocomplete
                 id="tags-filled"
-                options={dataAllClass.filter(cl=>cl.theoryClassId!=null).filter(cl=>cl.courseId===selectedClass.courseId && cl.classType === selectedClass.classType).map((option) => option.id)}
+                options={dataAllClass.filter(cl=>cl.theoryClassId!=null).filter(cl=>cl.courseId===selectedClassInRegistedTable.courseId && cl.classType === selectedClassInRegistedTable.classType).map((option) => option.id)}
                 filterOptions={filterOption}
                 // value={value}
                 onChange={(event, newValue) => {
-                    console.log(newValue);
-                    // handleChangeListClassIdSelected(newValue)
+                    onChangeClassId(newValue)
                 }}
 
                 renderInput={(params) => (

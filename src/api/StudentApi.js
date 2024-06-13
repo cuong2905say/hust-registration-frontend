@@ -1,7 +1,8 @@
 import {client} from "./Axios.js";
 import {toast} from "react-toastify";
 
-export const getRegistedCourse = async (semester) => {
+
+export const getRegistedCourses = async (semester) => {
     try {
         const {data} = await client.get('/students/courses/register-courses', {
             params: {
@@ -10,7 +11,7 @@ export const getRegistedCourse = async (semester) => {
         })
         return data.data
     } catch (err) {
-        toast.error("Lấy danh sách học phần thất bại: " + err.response.data.message)
+        toast.error(err.response.data.message)
         throw err
     }
 }
@@ -63,7 +64,6 @@ export const registerClass = async (semester, classIds = []) => {
     }
 }
 
-
 export const registerCourse = async (semester, courseIds = []) => {
     try {
         const {data} = await client.post('/students/courses/register-courses', {
@@ -74,20 +74,6 @@ export const registerCourse = async (semester, courseIds = []) => {
     } catch (err) {
         toast.error(err.response.data.message)
         return undefined
-    }
-}
-
-export const getRegistedCourses = async (semester) => {
-    try {
-        const {data} = await client.get('/students/courses/register-courses', {
-            params: {
-                semester: semester
-            }
-        })
-        return data.data
-    } catch (err) {
-        toast.error(err.response.data.message)
-        throw err
     }
 }
 
@@ -102,6 +88,25 @@ export const unRegisterCourse = async (semester, courseIds = []) => {
         return data.data
     } catch (err) {
         toast.error('Không thể xóa học phần: ', err.response.data.message)
+        throw err
+    }
+}
+
+
+export const changeClassToSimilar = async (semester, oldClassId, newClassId) => {
+    if (oldClassId === newClassId) {
+        toast.error('2 lớp không thể giống nhau: ' + oldClassId)
+        return;
+    }
+    try {
+        const {data} = await client.post('/students/classes/change-class', {
+            semester: semester,
+            oldClassId: oldClassId,
+            newClassId: newClassId
+        })
+        return data.data
+    } catch (err) {
+        toast.error('Không thể thay đổi lớp ' + oldClassId + ' -> ' + newClassId + ': ' + err.response.data.message)
         throw err
     }
 }
