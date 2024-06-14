@@ -12,6 +12,7 @@ import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle.js";
 import {ToolTipChangeSimilarClass, ToolTipDeleteClass, ToolTipRegister} from "./pop-up/ToolTipText.jsx";
 import {toast} from "react-toastify";
+import {TimeTable} from "./right-panel/timetable/TimeTable.jsx";
 
 const RightPanel = ({
                         handleChangeSemesterValue,
@@ -70,6 +71,7 @@ const RightPanel = ({
                 updatedTime: item.updatedTime,
                 status: item.class.status,
                 updatedById: item.updatedById,
+                timetables:item.class.timetable
             };
         });
         setDataClassRegisted([])
@@ -200,7 +202,9 @@ const RightPanel = ({
                     <ChangeCircleIcon/>
                 </Button>
             </Typography>
-            <Box></Box>
+            <Box sx={{width:'100%'}}>
+                <TimeTable registedClass={dataClassRegisted}/>
+            </Box>
         </Box>
     )
         ;
