@@ -64,9 +64,9 @@ export const TimeTable = ({registedClass}) => {
             <Grid item>
                 <Test/>
             </Grid>
-            <Grid item>
-                <Test/>
-            </Grid>
+            {/*<Grid item>*/}
+            {/*    <Test/>*/}
+            {/*</Grid>*/}
         </Grid>
     )
 }
@@ -86,9 +86,10 @@ const schedulerData = [
 
 export const Test = () => {
     return (
-        <Paper>
+        <Paper >
             <Scheduler
                 data={schedulerData}
+                height={300}
             >
                 <ViewState
                     currentDate={currentDate}

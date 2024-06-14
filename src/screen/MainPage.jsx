@@ -57,8 +57,12 @@ const MainPage = () => {
         setDataAllClass(newData)
     }
 
+    const fetchMetadataSemester = ()=>{
+        // TODO: fetch semester
+    }
 
     useEffect(() => {
+        fetchMetadataSemester()
         fetchStudentData()
         fetchDataAllClasses()
     }, [semester]);

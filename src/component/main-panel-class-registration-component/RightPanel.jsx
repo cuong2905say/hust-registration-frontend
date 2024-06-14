@@ -13,6 +13,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle.js";
 import {ToolTipChangeSimilarClass, ToolTipDeleteClass, ToolTipRegister} from "./pop-up/ToolTipText.jsx";
 import {toast} from "react-toastify";
 import {TimeTable} from "./right-panel/timetable/TimeTable.jsx";
+import Tooltip from "@mui/material/Tooltip";
 
 const RightPanel = ({
                         handleChangeSemesterValue,
@@ -33,8 +34,8 @@ const RightPanel = ({
         setIsOpenDialogChangeClassSimilar(!isOpenDialogChangeClassSimilar)
     }
 
-    const handleClickButtonChangeToSimilarClass = async ()=>{
-        await changeClassToSimilar(semester,selectedRowTableClassRegisted[0].classId,classIdToChangeToSimilar)
+    const handleClickButtonChangeToSimilarClass = async () => {
+        await changeClassToSimilar(semester, selectedRowTableClassRegisted[0].classId, classIdToChangeToSimilar)
         setIsOpenDialogChangeClassSimilar(!isOpenDialogChangeClassSimilar)
         toast.success('Thay đổi thành công lớp: ' + selectedRowTableClassRegisted[0].classId + ' -> ' + classIdToChangeToSimilar)
         await fetchDataClassRegisted(semester)
@@ -71,7 +72,7 @@ const RightPanel = ({
                 updatedTime: item.updatedTime,
                 status: item.class.status,
                 updatedById: item.updatedById,
-                timetables:item.class.timetable
+                timetables: item.class.timetable
             };
         });
         setDataClassRegisted([])
@@ -86,7 +87,7 @@ const RightPanel = ({
         // Đóng text nếu có bất kì thay đổi nào
         setIsOpenDialogChangeClassSimilar(false)
         setClassIdToChangeToSimilarClass(null)
-    }, [selectedRowTableClassRegisted,semester,studentInfo]);
+    }, [selectedRowTableClassRegisted, semester, studentInfo]);
 
     const handleClickButtonRegistedClass = async () => {
         await registerClass(semester, selectedClassIdToRegister)
@@ -162,11 +163,11 @@ const RightPanel = ({
                     </Button>
                     <ToolTipDeleteClass/>
                 </Box>
-                <Box sx={{justifyContent:"center"}}>
+                <Box sx={{justifyContent: "center"}}>
                     {isOpenDialogChangeClassSimilar ?
                         <Box
-                            sx={{display:"flex"}}
-                            open={isOpenDialogChangeClassSimilar&& selectedRowTableClassRegisted.length===1}>
+                            sx={{display: "flex"}}
+                            open={isOpenDialogChangeClassSimilar && selectedRowTableClassRegisted.length === 1}>
                             <AutoCompleteSelectClassToChangeSimilar
                                 selectedClassInRegistedTable={selectedRowTableClassRegisted[0]}
                                 dataAllClass={dataAllClass}
@@ -177,7 +178,7 @@ const RightPanel = ({
                             >
                                 Thay đổi lớp
                             </Button>
-                        </Box>:<></>
+                        </Box> : <></>
                     }
                     <Button
                         onClick={handleClickButtonOpenBoxForChangeToSimilar}
@@ -198,11 +199,17 @@ const RightPanel = ({
                 marginBottom="20px"
             >
                 Thời khóa biểu các lớp đã đăng ký
-                <Button>
-                    <ChangeCircleIcon/>
-                </Button>
+                <Tooltip
+                    enterDelay={500}
+                    leaveDelay={200}
+                    title = 'Thay đổi chế độ xem TKB '
+                >
+                    <Button>
+                        <ChangeCircleIcon/>
+                    </Button>
+                </Tooltip>
             </Typography>
-            <Box sx={{width:'100%'}}>
+            <Box sx={{width: '100%'}}>
                 <TimeTable registedClass={dataClassRegisted}/>
             </Box>
         </Box>
