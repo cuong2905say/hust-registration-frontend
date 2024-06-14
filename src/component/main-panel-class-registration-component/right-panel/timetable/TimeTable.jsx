@@ -1,7 +1,6 @@
 import {Grid} from "@mui/material";
-import Paper from '@mui/material/Paper';
 import {ViewState} from '@devexpress/dx-react-scheduler';
-import {Appointments, DayView, Scheduler, WeekView,} from '@devexpress/dx-react-scheduler-material-ui';
+import {Appointments, Scheduler, WeekView,} from '@devexpress/dx-react-scheduler-material-ui';
 
 /**
  * @param week example '3-10, 12-19, 20, 24-26'
@@ -50,58 +49,48 @@ const getAllTimetable = (registedClass) => {
     return result
 }
 
-const getTimeTableWeek = ({week}) => {
-
-}
-
 export const TimeTable = ({registedClass}) => {
-    // TODO: line for developer
-    if (registedClass.length === 0) return <></>
+    if (!registedClass||registedClass.length === 0) return <></>
     console.log(getAllTimetable(registedClass))
 
     return (
         <Grid container spacing={2}>
-            <Grid item>
-                <Test/>
+            <Grid item >
+                <TimeTableWeek registedClass={registedClass}/>
             </Grid>
-            {/*<Grid item>*/}
-            {/*    <Test/>*/}
-            {/*</Grid>*/}
         </Grid>
     )
 }
 
-export const TimeTableWeek = ({week}) => {
-    return <></>
+// TODO: TEST
+const getSchedulerData = ({dayStartWeek1,allTimeTable})=>{
+    console.log(allTimeTable)
 }
 
-
-// TODO: TEST
-
-const currentDate = '2018-11-01';
 const schedulerData = [
     {startDate: '2018-11-01T09:45', endDate: '2018-11-01T11:00', title: 'Meeting'},
     {startDate: '2018-11-01T12:00', endDate: '2018-11-01T13:30', title: 'Go to a gym'},
 ];
 
-export const Test = () => {
+export const TimeTableWeek = ({weekNumber,dayStartWeek1,timetables,registedClass}) => {
+    getSchedulerData({dayStartWeek1:1,allTimeTable:getAllTimetable(registedClass)})
     return (
-        <Paper >
-            <Scheduler
-                data={schedulerData}
-                height={300}
-            >
-                <ViewState
-                    currentDate={currentDate}
-                />
-                <WeekView
-                    startDayHour={6.75}
-                    endDayHour={17.5}
-                    name = 'Tuần 1'
-                />
-                <Appointments/>
-            </Scheduler>
-        </Paper>
+        <Scheduler
+            data={schedulerData}
+            title={'siuuuuuuu'}
+
+        >
+            <ViewState
+                currentDate={'2018-11-01'}
+            />
+            <WeekView
+                startDayHour={6}
+                endDayHour={18}
+                cellDuration={120}
+                name='Tuần 1'
+            />
+            <Appointments/>
+        </Scheduler>
     )
 }
 
