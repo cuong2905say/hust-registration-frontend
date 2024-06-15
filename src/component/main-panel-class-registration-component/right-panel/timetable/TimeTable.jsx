@@ -50,38 +50,70 @@ const getAllTimetable = (registedClass) => {
 }
 
 export const TimeTable = ({registedClass}) => {
-    if (!registedClass||registedClass.length === 0) return <></>
-    console.log(getAllTimetable(registedClass))
+    if (!registedClass || registedClass.length === 0) return <></>
 
     return (
         <Grid container spacing={2}>
-            <Grid item >
-                <TimeTableWeek registedClass={registedClass}/>
+            <Grid item>
+                <TimeTableWeek weekNumber={3} registedClass={registedClass} dayStartWeek1={new Date(2024, 7, 9)}/>
             </Grid>
         </Grid>
     )
 }
 
-// TODO: TEST
-const getSchedulerData = ({dayStartWeek1,allTimeTable})=>{
-    console.log(allTimeTable)
+function pad(number) {
+    return number < 10 ? '0' + number : number;
 }
 
-const schedulerData = [
-    {startDate: '2018-11-01T09:45', endDate: '2018-11-01T11:00', title: 'Meeting'},
+/**
+ * @param date
+ * @param weekNumber
+ * @param dayOfWeek
+ * @param hour
+ * @param minute
+ * @return (yyyy-mm-ddThh:mm)
+ */
+const getDateStringData = (date, weekNumber, dayOfWeek, hour, minute) => {
+    const dateTmp = new Date(date)
+    dateTmp.setDate(date.getDate() + dayOfWeek - 1 + (weekNumber - 1) * 7)
+    const year = dateTmp.getFullYear();
+    const month = pad(dateTmp.getMonth() + 1);
+    const day = pad(dateTmp.getDate());
+    console.log(dateTmp)
+    return `${year}-${month}-${day}T${pad(hour)}:${pad(minute)}`;
+}
+
+const getSchedulerWeek = (week, allTimeTable, dayStartWeek1) => {
+    console.log(allTimeTable)
+    const resultWeek = []
+    allTimeTable.forEach(item => {
+        if (item.timetable.week.includes(week)) {
+            resultWeek.push({
+                title: item.classId,
+                startDate: getDateStringData(dayStartWeek1, week, item.timetable.dayOfWeek, item.timetable.from.hour, item.timetable.from.minute),
+                endDate: getDateStringData(dayStartWeek1, week, item.timetable.dayOfWeek, item.timetable.to.hour, item.timetable.to.minute),
+            })
+        }
+    })
+    return resultWeek
+}
+
+const simpleData = [
     {startDate: '2018-11-01T12:00', endDate: '2018-11-01T13:30', title: 'Go to a gym'},
 ];
 
-export const TimeTableWeek = ({weekNumber,dayStartWeek1,timetables,registedClass}) => {
-    getSchedulerData({dayStartWeek1:1,allTimeTable:getAllTimetable(registedClass)})
+export const TimeTableWeek = ({weekNumber, dayStartWeek1, registedClass}) => {
+
+    const weekSchedulerData = getSchedulerWeek(weekNumber, getAllTimetable(registedClass), dayStartWeek1)
+    console.log(weekSchedulerData)
     return (
         <Scheduler
-            data={schedulerData}
+            data={weekSchedulerData}
             title={'siuuuuuuu'}
 
         >
             <ViewState
-                currentDate={'2018-11-01'}
+                currentDate={'2024-08-26'}
             />
             <WeekView
                 startDayHour={6}
