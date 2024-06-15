@@ -1,6 +1,9 @@
 import {Grid} from "@mui/material";
 import {ViewState} from '@devexpress/dx-react-scheduler';
 import {Appointments, Scheduler, WeekView,} from '@devexpress/dx-react-scheduler-material-ui';
+import {useEffect, useState} from "react";
+import {getDayStartYear} from "../../../../api/MetadataApi.js";
+import {DataGrid} from "@mui/x-data-grid";
 
 /**
  * @param week example '3-10, 12-19, 20, 24-26'
@@ -23,43 +26,46 @@ const parseWeekToArray = (week) => {
 
 const getAllTimetable = (registedClass) => {
     let result = []
+    let startWeek = 100
+    let endWeek = 0
     registedClass.forEach(cl => {
         let classTimetable = JSON.parse(cl.timetables)
         classTimetable.forEach(ttb => {
+            const week = parseWeekToArray(ttb.week)
             result.push({
+                id: cl.classId + ttb.week + ttb.from + ttb.to,
                 classId: cl.classId,
-                timetable: {
-                    from:
-                        {
-                            hour: parseInt(ttb.from.slice(0, 2), 10),
-                            minute: parseInt(ttb.from.slice(2, 4), 10),
-                        },
-                    to:
-                        {
-                            hour: parseInt(ttb.to.slice(0, 2), 10),
-                            minute: parseInt(ttb.to.slice(2, 4), 10),
-                        },
-                    week: parseWeekToArray(ttb.week),
-                    place: ttb.place,
-                    dayOfWeek: ttb.dayOfWeek
-                }
+                courseName: cl.courseName,
+                credit: cl.credit,
+                classType: cl.classType,
+                courseId: cl.courseId,
+                from:
+                    {
+                        hour: parseInt(ttb.from.slice(0, 2), 10),
+                        minute: parseInt(ttb.from.slice(2, 4), 10),
+                    },
+                to:
+                    {
+                        hour: parseInt(ttb.to.slice(0, 2), 10),
+                        minute: parseInt(ttb.to.slice(2, 4), 10),
+                    },
+                timeNotParse:ttb.from+'-'+ttb.to,
+                week: week,
+                weekNotParse: ttb.week,
+                place: ttb.place,
+                dayOfWeek: ttb.dayOfWeek
             })
+            startWeek = Math.min(...week, startWeek)
+            endWeek = Math.max(...week, endWeek)
         })
     })
-    return result
+    return {
+        startWeek: startWeek,
+        endWeek: endWeek,
+        allTimeTable: result
+    }
 }
 
-export const TimeTable = ({registedClass}) => {
-    if (!registedClass || registedClass.length === 0) return <></>
-
-    return (
-        <Grid container spacing={2}>
-            <Grid item>
-                <TimeTableWeek weekNumber={3} registedClass={registedClass} dayStartWeek1={new Date(2024, 7, 9)}/>
-            </Grid>
-        </Grid>
-    )
-}
 
 function pad(number) {
     return number < 10 ? '0' + number : number;
@@ -75,49 +81,51 @@ function pad(number) {
  */
 const getDateStringData = (date, weekNumber, dayOfWeek, hour, minute) => {
     const dateTmp = new Date(date)
-    dateTmp.setDate(date.getDate() + dayOfWeek - 1 + (weekNumber - 1) * 7)
+    dateTmp.setDate(dateTmp.getDate() + dayOfWeek - 1 + (weekNumber - 1) * 7)
     const year = dateTmp.getFullYear();
     const month = pad(dateTmp.getMonth() + 1);
     const day = pad(dateTmp.getDate());
-    console.log(dateTmp)
     return `${year}-${month}-${day}T${pad(hour)}:${pad(minute)}`;
 }
 
-const getSchedulerWeek = (week, allTimeTable, dayStartWeek1) => {
-    console.log(allTimeTable)
+const getSchedulerWeek = (week, allTimeTable, dayStartYear) => {
     const resultWeek = []
     allTimeTable.forEach(item => {
-        if (item.timetable.week.includes(week)) {
+        if (item.week.includes(week)) {
             resultWeek.push({
                 title: item.classId,
-                startDate: getDateStringData(dayStartWeek1, week, item.timetable.dayOfWeek, item.timetable.from.hour, item.timetable.from.minute),
-                endDate: getDateStringData(dayStartWeek1, week, item.timetable.dayOfWeek, item.timetable.to.hour, item.timetable.to.minute),
+                startDate: getDateStringData(dayStartYear, week, item.dayOfWeek, item.from.hour, item.from.minute),
+                endDate: getDateStringData(dayStartYear, week, item.dayOfWeek, item.to.hour, item.to.minute),
             })
         }
     })
     return resultWeek
+
 }
 
-const simpleData = [
-    {startDate: '2018-11-01T12:00', endDate: '2018-11-01T13:30', title: 'Go to a gym'},
-];
+const offSetWeek = (dayStartYear, weekNumber) => {
+    let date = new Date(dayStartYear);
+    date.setDate(date.getDate() + (weekNumber - 1) * 7)
+    return date
+}
 
-export const TimeTableWeek = ({weekNumber, dayStartWeek1, registedClass}) => {
+const TimeTableWeek = (props) => {
 
-    const weekSchedulerData = getSchedulerWeek(weekNumber, getAllTimetable(registedClass), dayStartWeek1)
-    console.log(weekSchedulerData)
+    // DEFAULT
+    const {weekNumber = '1', dayStartYear = '', weekData = []} = props
     return (
         <Scheduler
-            data={weekSchedulerData}
+            data={weekData}
             title={'siuuuuuuu'}
 
         >
             <ViewState
-                currentDate={'2024-08-26'}
+                currentDate={offSetWeek(dayStartYear, weekNumber)}
             />
+
             <WeekView
-                startDayHour={6}
-                endDayHour={18}
+                startDayHour={5.75}
+                endDayHour={18.25}
                 cellDuration={120}
                 name='Tuần 1'
             />
@@ -126,3 +134,78 @@ export const TimeTableWeek = ({weekNumber, dayStartWeek1, registedClass}) => {
     )
 }
 
+const getFirstWeekAndLastWeek = () => {
+}
+
+export const TimeTableViewByWeek = (props) => {
+    const {registedClass = [], semester = ''} = props
+
+    const [dayStartYear, setDayStartYear] = useState(null)
+
+    const fetchDayStartYear = async (semester) => {
+        const data = await getDayStartYear(semester.slice(0, 4))
+        setDayStartYear(new Date(data))
+    }
+
+    useEffect(() => {
+        fetchDayStartYear(semester)
+    }, [semester]);
+
+    if (!registedClass || registedClass.length === 0) return <></>
+    const {startWeek, endWeek, allTimeTable} = getAllTimetable(registedClass)
+
+    let listTimetableWeek = []
+    for (let i = startWeek; i <= endWeek; i++) {
+        listTimetableWeek.push(getSchedulerWeek(i, allTimeTable, dayStartYear))
+    }
+
+    console.log(listTimetableWeek)
+
+    return (
+        <Grid container spacing={2}>
+            {listTimetableWeek.map((weekData, index) => (
+                <Grid item key={index}>
+                    <TimeTableWeek
+                        weekNumber={index + startWeek}
+                        dayStartYear={dayStartYear}
+                        weekData={weekData}/>
+                </Grid>
+            ))}
+        </Grid>
+    )
+}
+
+export const DefaultTimetable = (props) => {
+    const {registedClass = [], semester = ''} = props
+
+    const {allTimeTable} = getAllTimetable(registedClass)
+    console.log(allTimeTable)
+    const columns = [
+        {field: 'classId', headerName: 'Mã lớp', flex: 90},
+        {field: 'courseId', headerName: 'Mã HP', flex: 100},
+        {field: 'courseName', headerName: 'Tên HP', flex: 300},
+        {field: 'classType', headerName: 'Loại lớp', flex: 100},
+        {field: 'dayOfWeek', headerName: 'Thứ', flex: 50},
+        {field: 'timeNotParse',headerName: 'Thời gian',flex: 150},
+        {field: 'weekNotParse', headerName: 'Tuần học', flex: 150},
+        {field: 'place', headerName: 'Phòng học', flex: 100},
+    ]
+
+    return (
+        <DataGrid
+            columns={columns}
+            rows={allTimeTable}
+            disableRowSelectionOnClick
+            disableColumnSorting
+            disableColumnMenu
+
+            initialState={{
+                sorting: {
+                    sortModel: [
+                        {field: 'dayOfWeek', sort: 'asc'}
+                    ]
+                }
+            }}
+        />
+    )
+}

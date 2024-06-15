@@ -1,7 +1,6 @@
 import {Box, Button, Typography} from "@mui/material";
 import React, {useEffect, useState} from "react";
 import {SemesterSelector} from "./right-panel/SemesterSelector.jsx";
-import TableListSchedule from "./right-panel/TableListSchedule.jsx";
 import {
     AutoCompleteSelectClass,
     AutoCompleteSelectClassToChangeSimilar
@@ -12,15 +11,17 @@ import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle.js";
 import {ToolTipChangeSimilarClass, ToolTipDeleteClass, ToolTipRegister} from "./pop-up/ToolTipText.jsx";
 import {toast} from "react-toastify";
-import {TimeTable} from "./right-panel/timetable/TimeTable.jsx";
+import {DefaultTimetable, TimeTableViewByWeek} from "./right-panel/timetable/TimeTable.jsx";
 import Tooltip from "@mui/material/Tooltip";
 
-const RightPanel = ({
-                        handleChangeSemesterValue,
-                        semester,
-                        dataAllClass,
-                        studentInfo
-                    }) => {
+const RightPanel = (props) => {
+    const {
+        handleChangeSemesterValue = null,
+        semester = '20231',
+        dataAllClass = [],
+        studentInfo = null
+    } = props
+
     const [selectedRowTableClassRegisted, setSelectedRowTableClassRegisted] = useState([])
 
     const [selectedClassIdToRegister, setSelectedClassIdToRegister] = useState([]);
@@ -30,6 +31,31 @@ const RightPanel = ({
     const [classIdToChangeToSimilar, setClassIdToChangeToSimilarClass] = useState(null);
 
     const [dataClassRegisted, setDataClassRegisted] = useState([])
+
+    const listTimetableViewType = ['default', 'single-week', 'all-week', 'single-month', 'all-month']
+    const [timetableViewType, setTimetableViewType] = useState('default')
+
+    const handleClickIconChangeViewType = () => {
+        let index = listTimetableViewType.indexOf(timetableViewType)
+        let nextIndex = (index + 1) % listTimetableViewType.length
+        setTimetableViewType(listTimetableViewType[nextIndex])
+    }
+
+    const renderTimetableView = () => {
+        switch (timetableViewType) {
+            case 'default':
+                return <DefaultTimetable registedClass={dataClassRegisted} semester={semester}/>
+            case 'all-week':
+                return <TimeTableViewByWeek registedClass={dataClassRegisted} semester={semester}/>
+            default:
+                return <></>
+        }
+    }
+
+    useEffect(() => {
+        console.log(timetableViewType)
+    }, [timetableViewType]);
+
     const handleClickButtonOpenBoxForChangeToSimilar = () => {
         setIsOpenDialogChangeClassSimilar(!isOpenDialogChangeClassSimilar)
     }
@@ -61,7 +87,7 @@ const RightPanel = ({
         }
         const newData = data.map((item) => {
             return {
-                id: item.class.course.id + "-" + item.classId,
+                id: item.class.course.id + "-" + item.classId + '-' + item.class.classType,
                 courseId: item.class.course.id,
                 courseName: item.class.course.courseName || item.class.course.courseNameE,
                 credit: item.class.course.credit,
@@ -202,19 +228,18 @@ const RightPanel = ({
                 <Tooltip
                     enterDelay={500}
                     leaveDelay={200}
-                    title = 'Thay đổi chế độ xem TKB '
+                    title='Thay đổi chế độ xem TKB '
                 >
-                    <Button>
+                    <Button onClick={handleClickIconChangeViewType}>
                         <ChangeCircleIcon/>
                     </Button>
                 </Tooltip>
             </Typography>
             <Box sx={{width: '100%'}}>
-                <TimeTable registedClass={dataClassRegisted}/>
+                {renderTimetableView()}
             </Box>
         </Box>
     )
-        ;
 };
 
 export default RightPanel;

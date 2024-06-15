@@ -15,3 +15,4 @@ export const getAllClass = async (semester) => {
     }
 }
 
+

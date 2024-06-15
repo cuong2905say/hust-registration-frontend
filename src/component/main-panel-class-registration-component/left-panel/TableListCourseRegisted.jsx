@@ -21,9 +21,9 @@ const TableListCourseRegisted = ({studentInfo,semester}) => {
     }, [semester]);
 
     const columns = [
-        {field: "id", headerName: "Mã HP", flex: 80},
+        {field: "id", headerName: "Mã HP", flex: 120},
         {field: "courseName", headerName: "Tên học phần", flex: 240},
-        {field:"credit",headerName: "Số TC",flex: 70}
+        {field:"credit",headerName: "TC",flex: 50}
     ];
 
     return (

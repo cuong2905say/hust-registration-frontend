@@ -15,3 +15,5 @@ export const getClassesByCourseId = async (semester, courseId) => {
         throw err;
     }
 }
+
+

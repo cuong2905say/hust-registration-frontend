@@ -1,11 +1,17 @@
-import {Box, Button, Link, TextField, Typography} from "@mui/material";
-import React, {useEffect, useState} from "react";
+import {Box, Button, TextField, Typography} from "@mui/material";
+import React, {useState} from "react";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
 import TableListCourseRegisted from "./left-panel/TableListCourseRegisted.jsx";
-import {getInfo} from "../../api/UserApi.js";
 
 
-const LeftPanel = ({openListClassPopup, studentInfo, fetchStudentData,semester}) => {
+const LeftPanel = (props) => {
+    const {
+        openListClassPopup = null,
+        studentInfo = null,
+        fetchStudentData = null,
+        semester = '20231'
+    } = props
+
     const [studentId, setChangeStudentId] = useState("20204524");
     const handleChangeStudentId = (e) => {
         setChangeStudentId(e.target.value);
@@ -98,7 +104,7 @@ const LeftPanel = ({openListClassPopup, studentInfo, fetchStudentData,semester})
                 <Typography
                     fontSize="14px"
                     fontWeight="bold"
-                >{studentInfo.maxCredit||`24`}</Typography>
+                >{studentInfo.maxCredit || `24`}</Typography>
             </Box>
             <Box
                 sx={{
