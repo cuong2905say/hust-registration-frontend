@@ -11,8 +11,9 @@ import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle.js";
 import {ToolTipChangeSimilarClass, ToolTipDeleteClass, ToolTipRegister} from "./pop-up/ToolTipText.jsx";
 import {toast} from "react-toastify";
-import {DefaultTimetable, TimetableViewByMonth, TimetableViewByWeek} from "./right-panel/timetable/TimeTable.jsx";
+import {DefaultTimetable, TimetableViewBySingleMonth, TimetableViewByWeek} from "./right-panel/timetable/TimeTable.jsx";
 import Tooltip from "@mui/material/Tooltip";
+import {getClassStudentRegisted} from "../../api/AdminApi.js";
 
 const RightPanel = (props) => {
     const {
@@ -32,8 +33,8 @@ const RightPanel = (props) => {
 
     const [dataClassRegisted, setDataClassRegisted] = useState([])
 
-    const listTimetableViewType = ['default', 'single-week', 'all-week', 'single-month', 'all-month']
-    const [timetableViewType, setTimetableViewType] = useState('default')
+    const listTimetableViewType = ['default', 'single-week', 'all-week', 'single-month']
+    const [timetableViewType, setTimetableViewType] = useState('single-month')
 
     const handleClickIconChangeViewType = () => {
         let index = listTimetableViewType.indexOf(timetableViewType)
@@ -47,8 +48,8 @@ const RightPanel = (props) => {
                 return <DefaultTimetable registedClass={dataClassRegisted} semester={semester}/>
             case 'all-week':
                 return <TimetableViewByWeek registedClass={dataClassRegisted} semester={semester}/>
-            case 'all-month':
-                return <TimetableViewByMonth registedClass={dataClassRegisted} semester={semester}/>
+            case 'single-month':
+                return <TimetableViewBySingleMonth registedClass={dataClassRegisted} semester={semester}/>
             default:
                 return <></>
         }
@@ -73,7 +74,12 @@ const RightPanel = (props) => {
         handleChangeSemesterValue(e);
     };
     const fetchDataClassRegisted = async (semester) => {
-        const data = await getRegistedClass(semester);
+        let data = []
+        if (localStorage.getItem('role') === 'ROLE_STUDENT') {
+            data = await getRegistedClass(semester);
+        }else {
+            data = await getClassStudentRegisted(studentInfo.email,semester)
+        }
 
         const getClassTypeVietnamese = (type) => {
             switch (type) {
@@ -108,8 +114,8 @@ const RightPanel = (props) => {
     };
 
     useEffect(() => {
-        fetchDataClassRegisted(semester)
-    }, [semester]);
+        if (studentInfo) fetchDataClassRegisted(semester)
+    }, [studentInfo, semester]);
 
     useEffect(() => {
         // Đóng text nếu có bất kì thay đổi nào

@@ -1,7 +1,7 @@
 import {client} from "./Axios.js";
 import {toast} from "react-toastify";
 
-export const getInfo = async () => {
+export const getMyInfo = async () => {
     try {
         const {data} = await client.get('/user/get-info')
         return data.data

@@ -7,18 +7,16 @@ import TableListCourseRegisted from "./left-panel/TableListCourseRegisted.jsx";
 const LeftPanel = (props) => {
     const {
         openListClassPopup = null,
-        studentInfo = null,
-        fetchStudentData = null,
+        studentInfo = undefined,
+        fetchStudentDataByAdmin = null,
         semester = '20231'
     } = props
 
-    const [studentId, setChangeStudentId] = useState("20204524");
+    const [studentId, setChangeStudentId] = useState('');
     const handleChangeStudentId = (e) => {
         setChangeStudentId(e.target.value);
     };
 
-    if (studentInfo === null)
-        return (<></>)
     return (
         <Box sx={{marginTop: "20px", paddingLeft: "15px"}}>
             <Box
@@ -31,24 +29,28 @@ const LeftPanel = (props) => {
             >
                 <StarOutlineIcon/>
                 <Typography fontSize="14px">
-                    Mã sinh viên :
+                    Mã SV
                 </Typography>
                 {
-                    localStorage.getItem('ROLE') === 'ROLE_ADMIN' ?
+                    localStorage.getItem('role') === 'ROLE_ADMIN' ?
                         <TextField
                             onChange={handleChangeStudentId}
-                            type="number"
+                            type="email"
                             onKeyDown={(e) => {
                                 if (e.key === "Enter") {
-                                    fetchStudentData(studentId)
+                                    fetchStudentDataByAdmin(studentId)
                                 }
                             }}
                             size="small"
-                            style={{padding: "0px", marginLeft: "10px"}}
+                            style={{padding: "0px", marginLeft: "5px"}}
                         />
                         :
-                        <Typography fontSize="14px" fontWeight={"bold"}>
-                            {'20' + studentInfo.email.split('@')[0].slice(-6)}
+                        <Typography
+                            fontSize="14px"
+                            fontWeight={"bold"}
+                            sx={{ml:'5px'}}
+                        >
+                            {studentInfo ? '20' + studentInfo.email.split('@')[0].slice(-6) : '???'}
                         </Typography>
                 }
             </Box>
@@ -63,11 +65,15 @@ const LeftPanel = (props) => {
                 <StarOutlineIcon/>
                 <Typography
                     fontSize="14px"
-                >{`Họ và tên sinh viên: `}
+                >{`Họ và tên sinh viên `}
                 </Typography>
 
-                <Typography fontSize="14px" fontWeight={"bold"}>
-                    {studentInfo.name || 'Nguyễn Mạnh Cường'}
+                <Typography
+                    fontSize="14px"
+                    fontWeight={"bold"}
+                    sx={{ml:'5px'}}
+                >
+                    {studentInfo ? studentInfo.name : '???'}
                 </Typography>
             </Box>
             <Box
@@ -81,12 +87,13 @@ const LeftPanel = (props) => {
                 <StarOutlineIcon/>
                 <Typography
                     fontSize="14px"
-                >{`Lớp sinh viên : `}</Typography>
+                >{`Lớp sinh viên  `}</Typography>
 
                 <Typography
+                    sx={{ml:'5px'}}
                     fontSize="14px"
                     fontWeight="bold"
-                >{studentInfo.studentClassName || ` Khoa học máy tính 04 - K65`}</Typography>
+                >{studentInfo ? studentInfo.studentClassName : '???'}</Typography>
             </Box>
             <Box
                 sx={{
@@ -99,12 +106,13 @@ const LeftPanel = (props) => {
                 <StarOutlineIcon/>
                 <Typography
                     fontSize="14px"
-                >{`Số tín chỉ tối đa :`}</Typography>
+                >{`Số tín chỉ tối đa `}</Typography>
 
                 <Typography
                     fontSize="14px"
                     fontWeight="bold"
-                >{studentInfo.maxCredit || `24`}</Typography>
+                    sx={{ml:'5px'}}
+                >{studentInfo ? studentInfo.maxCredit : '???'}</Typography>
             </Box>
             <Box
                 sx={{

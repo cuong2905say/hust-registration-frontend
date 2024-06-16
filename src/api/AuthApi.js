@@ -18,7 +18,6 @@ export const login = async (email, password) => {
         localStorage.setItem('access_token', data.data.token)
         localStorage.setItem('expires', data.data.expires)
         localStorage.setItem('role', data.data.role)
-        console.log(data.data)
         return data.data
     } catch (err) {
         toast.error("Đăng nhập thất bại: " + err.response.data.message)

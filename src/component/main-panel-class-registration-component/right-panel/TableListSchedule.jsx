@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { getRegistedClass } from "../../../api/StudentApi.js";
 import { DataGrid } from "@mui/x-data-grid";
 import { Box } from "@mui/material";
 

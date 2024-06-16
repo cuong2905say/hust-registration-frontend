@@ -28,6 +28,23 @@ export const getCourseStudentRegisted = async (studentEmail, semester) => {
     } catch
         (err) {
         toast.error(err.response.data.message)
+        throw err
     }
 
+}
+
+export const getStudentInfo = async (studentId) => {
+    try {
+        const {data} = await client.get('/admin/students/get-student-info', {
+            params:{
+                studentId:studentId
+            }
+        })
+        toast.success(data.data.email)
+        console.log(data.data)
+        return data.data
+    } catch (err) {
+        toast.error(err.response.data.message)
+        throw err
+    }
 }

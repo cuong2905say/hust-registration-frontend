@@ -5,12 +5,13 @@ import {useEffect, useState} from "react";
 import {AllClassesPopup} from "../component/main-panel-class-registration-component/pop-up/PopupAllClass.jsx";
 import {Box, Grid} from "@mui/material";
 import {getAllClass} from "../api/PublicApi.js";
-import {getInfo} from "../api/UserApi.js";
+import {getMyInfo} from "../api/UserApi.js";
+import {getStudentInfo} from "../api/AdminApi.js";
 
 const MainPage = () => {
     const [isOpenAllClasses, setOpenAllClasses] = useState(false);
 
-    const [studentInfo, setStudentInfo] = useState(null);
+    const [studentInfo, setStudentInfo] = useState(undefined);
 
     const closeAllClassesPopup = () => setOpenAllClasses(false);
     const openAllClassesPopup = () => setOpenAllClasses(true);
@@ -20,9 +21,14 @@ const MainPage = () => {
     const [semester, setSemester] = useState(
         localStorage.getItem("semester") || "20231"
     );
-    const fetchStudentData = async () => {
-        const data = await getInfo()
+    const getInfo = async () => {
+        const data = await getMyInfo()
         console.log(data)
+        if (data.role === 'ROLE_STUDENT') setStudentInfo(data)
+    }
+
+    const getStudentInfoByAdmin = async (studentId)=>{
+        const data = await getStudentInfo(studentId);
         setStudentInfo(data)
     }
 
@@ -57,13 +63,13 @@ const MainPage = () => {
         setDataAllClass(newData)
     }
 
-    const fetchMetadataSemester = ()=>{
+    const fetchMetadataSemester = () => {
         // TODO: fetch semester
     }
 
     useEffect(() => {
         fetchMetadataSemester()
-        fetchStudentData()
+        getInfo()
         fetchDataAllClasses()
     }, [semester]);
 
@@ -75,13 +81,13 @@ const MainPage = () => {
 
     return (
         <Box sx={{width: "100%"}}>
-            <HeaderPanel/>
+            <HeaderPanel name={studentInfo?studentInfo.name:'???'}/>
             <Grid container spacing={2}>
                 <Grid item xs={3}>
                     <LeftPanel
                         openListClassPopup={openAllClassesPopup}
                         studentInfo={studentInfo}
-                        fetchStudentData={fetchStudentData}
+                        fetchStudentDataByAdmin={getStudentInfoByAdmin}
                         semester={semester}
                     />
                 </Grid>
