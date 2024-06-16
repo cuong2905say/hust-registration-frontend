@@ -11,7 +11,7 @@ import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle.js";
 import {ToolTipChangeSimilarClass, ToolTipDeleteClass, ToolTipRegister} from "./pop-up/ToolTipText.jsx";
 import {toast} from "react-toastify";
-import {DefaultTimetable, TimeTableViewByWeek} from "./right-panel/timetable/TimeTable.jsx";
+import {DefaultTimetable, TimetableViewByMonth, TimetableViewByWeek} from "./right-panel/timetable/TimeTable.jsx";
 import Tooltip from "@mui/material/Tooltip";
 
 const RightPanel = (props) => {
@@ -46,7 +46,9 @@ const RightPanel = (props) => {
             case 'default':
                 return <DefaultTimetable registedClass={dataClassRegisted} semester={semester}/>
             case 'all-week':
-                return <TimeTableViewByWeek registedClass={dataClassRegisted} semester={semester}/>
+                return <TimetableViewByWeek registedClass={dataClassRegisted} semester={semester}/>
+            case 'all-month':
+                return <TimetableViewByMonth registedClass={dataClassRegisted} semester={semester}/>
             default:
                 return <></>
         }
