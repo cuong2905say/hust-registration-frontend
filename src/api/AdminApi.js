@@ -36,12 +36,44 @@ export const getCourseStudentRegisted = async (studentEmail, semester) => {
 export const getStudentInfo = async (studentId) => {
     try {
         const {data} = await client.get('/admin/students/get-student-info', {
-            params:{
-                studentId:studentId
+            params: {
+                studentId: studentId
             }
         })
         toast.success(data.data.email)
         console.log(data.data)
+        return data.data
+    } catch (err) {
+        toast.error(err.response.data.message)
+        throw err
+    }
+}
+
+export const unRegisterClassByAdmin = async (studentEmail, semester, classIds = []) => {
+    try {
+        const {data} = await client.delete('/admin/students/un-register-by-admin', {
+            data: {
+                studentEmail: studentEmail,
+                semester: semester,
+                classIds: classIds
+            }
+        })
+        toast.success('Xóa lớp thành công: ' + classIds)
+        return data.data
+    } catch (err) {
+        toast.error(err.response.data.message)
+        throw err
+    }
+}
+
+export const registerClassByAdmin = async (studentEmail, semester, classIds = []) => {
+    try {
+        console.log(classIds)
+        const {data} = await client.post('/admin/students/register-by-admin', {
+            studentEmail: studentEmail,
+            semester: semester,
+            classIds: classIds
+        })
         return data.data
     } catch (err) {
         toast.error(err.response.data.message)

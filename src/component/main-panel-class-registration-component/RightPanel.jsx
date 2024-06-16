@@ -13,7 +13,7 @@ import {ToolTipChangeSimilarClass, ToolTipDeleteClass, ToolTipRegister} from "./
 import {toast} from "react-toastify";
 import {DefaultTimetable, TimetableViewBySingleMonth, TimetableViewByWeek} from "./right-panel/timetable/TimeTable.jsx";
 import Tooltip from "@mui/material/Tooltip";
-import {getClassStudentRegisted} from "../../api/AdminApi.js";
+import {getClassStudentRegisted, registerClassByAdmin, unRegisterClassByAdmin} from "../../api/AdminApi.js";
 
 const RightPanel = (props) => {
     const {
@@ -77,8 +77,8 @@ const RightPanel = (props) => {
         let data = []
         if (localStorage.getItem('role') === 'ROLE_STUDENT') {
             data = await getRegistedClass(semester);
-        }else {
-            data = await getClassStudentRegisted(studentInfo.email,semester)
+        } else {
+            data = await getClassStudentRegisted(studentInfo.email, semester)
         }
 
         const getClassTypeVietnamese = (type) => {
@@ -124,12 +124,20 @@ const RightPanel = (props) => {
     }, [selectedRowTableClassRegisted, semester, studentInfo]);
 
     const handleClickButtonRegistedClass = async () => {
-        await registerClass(semester, selectedClassIdToRegister)
+        // TODO: pre-verify in frontend
+        if (localStorage.getItem('role') === 'ROLE_ADMIN') {
+            await registerClassByAdmin(studentInfo.email, semester, selectedClassIdToRegister)
+        } else
+            await registerClass(semester, selectedClassIdToRegister)
         await fetchDataClassRegisted(semester)
     }
 
     const handleClickButtonDeleteClass = async () => {
-        await unRegisterClass(semester, selectedRowTableClassRegisted.map(cl => cl.classId))
+        // TODO: pre-verify in frontend
+        if (localStorage.getItem('role') === 'ROLE_ADMIN') {
+            await unRegisterClassByAdmin(studentInfo.email, semester, selectedRowTableClassRegisted.map(cl => cl.classId))
+        } else
+            await unRegisterClass(semester, selectedRowTableClassRegisted.map(cl => cl.classId))
         await fetchDataClassRegisted(semester)
     }
 
@@ -198,7 +206,7 @@ const RightPanel = (props) => {
                     <ToolTipDeleteClass/>
                 </Box>
                 <Box sx={{justifyContent: "center"}}>
-                    {isOpenDialogChangeClassSimilar ?
+                    {isOpenDialogChangeClassSimilar  ?
                         <Box
                             sx={{display: "flex"}}
                             open={isOpenDialogChangeClassSimilar && selectedRowTableClassRegisted.length === 1}>
@@ -210,7 +218,7 @@ const RightPanel = (props) => {
                             <Button
                                 onClick={handleClickButtonChangeToSimilarClass}
                             >
-                                Thay đổi lớp
+                                Đồng ý
                             </Button>
                         </Box> : <></>
                     }
@@ -218,7 +226,7 @@ const RightPanel = (props) => {
                         onClick={handleClickButtonOpenBoxForChangeToSimilar}
                         sx={{marginLeft: 1}}
                         size='small'
-                        disabled={selectedRowTableClassRegisted.length !== 1 || selectedRowTableClassRegisted[0].classType === 'LT'}
+                        disabled={localStorage.getItem('role')!=='ROLE_STUDENT' ||selectedRowTableClassRegisted.length !== 1 || selectedRowTableClassRegisted[0].classType === 'LT'}
                         variant="contained"
                         color='secondary'>
                         Thay đổi lớp đã chọn
@@ -243,9 +251,10 @@ const RightPanel = (props) => {
                     </Button>
                 </Tooltip>
             </Typography>
-            <Box sx={{width: '100%'}}>
+            <Box  sx={{width: '100%'}}>
                 {renderTimetableView()}
             </Box>
+            <Box minHeight={'100px'}/>
         </Box>
     )
 };

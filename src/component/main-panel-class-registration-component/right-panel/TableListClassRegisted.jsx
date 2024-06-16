@@ -9,7 +9,7 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
         if(row.classType==='LT'){
             return false
         }
-        if(localStorage.getItem('ROLE')==='ROLE_ADMIN'){
+        if(localStorage.getItem('role')==='ROLE_ADMIN'){
             return true
         }
         return row.updatedById === studentInfo.email;
@@ -85,7 +85,8 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
             '& .super-app-theme--header':{
                 backgroundColor: 'rgba(200, 244, 244, 0.238)',
                 fontWeight:'bold'
-            }
+            },
+            minHeight:'250px'
         }}>
             <DataGrid
                 // slots={}
