@@ -11,7 +11,12 @@ import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle.js";
 import {ToolTipChangeSimilarClass, ToolTipDeleteClass, ToolTipRegister} from "./pop-up/ToolTipText.jsx";
 import {toast} from "react-toastify";
-import {DefaultTimetable, TimetableViewBySingleMonth, TimetableViewByWeek} from "./right-panel/timetable/TimeTable.jsx";
+import {
+    DefaultTimetable,
+    TimetableViewBySingleMonth,
+    TimetableViewBySingleWeek,
+    TimetableViewByWeek
+} from "./right-panel/timetable/TimeTable.jsx";
 import Tooltip from "@mui/material/Tooltip";
 import {getClassStudentRegisted, registerClassByAdmin, unRegisterClassByAdmin} from "../../api/AdminApi.js";
 
@@ -34,7 +39,7 @@ const RightPanel = (props) => {
     const [dataClassRegisted, setDataClassRegisted] = useState([])
 
     const listTimetableViewType = ['default', 'single-week', 'all-week', 'single-month']
-    const [timetableViewType, setTimetableViewType] = useState('single-month')
+    const [timetableViewType, setTimetableViewType] = useState('default')
 
     const handleClickIconChangeViewType = () => {
         let index = listTimetableViewType.indexOf(timetableViewType)
@@ -46,6 +51,8 @@ const RightPanel = (props) => {
         switch (timetableViewType) {
             case 'default':
                 return <DefaultTimetable registedClass={dataClassRegisted} semester={semester}/>
+            case 'single-week':
+                return <TimetableViewBySingleWeek registedClass={dataClassRegisted} semester={semester}/>
             case 'all-week':
                 return <TimetableViewByWeek registedClass={dataClassRegisted} semester={semester}/>
             case 'single-month':

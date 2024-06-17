@@ -35,7 +35,7 @@ const LeftPanel = (props) => {
                     localStorage.getItem('role') === 'ROLE_ADMIN' ?
                         <TextField
                             onChange={handleChangeStudentId}
-                            type="email"
+                            type="tel"
                             onKeyDown={(e) => {
                                 if (e.key === "Enter") {
                                     fetchStudentDataByAdmin(studentId)

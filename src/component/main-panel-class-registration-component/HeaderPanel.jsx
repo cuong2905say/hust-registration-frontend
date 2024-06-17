@@ -70,12 +70,6 @@ const HeaderPanel = ({name}) => {
                         Đăng xuất
                     </Button>
                 </Box>
-                <Typography fontSize="14px">
-                    Tuần 38 (Tuần học thứ 39):
-                    <span style={{fontWeight: "bold", marginLeft: "5px"}}>
-            20/05 - 25/05
-          </span>
-                </Typography>
             </Box>
         </Box>
     );

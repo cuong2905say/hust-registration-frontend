@@ -20,7 +20,7 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
         {
             field: "courseId",
             headerName: "Mã HP",
-            width: 120,
+            width: 90,
             headerClassName: 'super-app-theme--header'
         },
         {
@@ -35,13 +35,7 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
             width: 70,
             headerClassName: 'super-app-theme--header'
         },
-        {
-            field: "need",
-            headerName: "Cần TN",
-            width: 120,
-            renderCell: (params) => params.value,
-            headerClassName: 'super-app-theme--header'
-        },
+
         {
             field: "classId",
             headerName: "Mã lớp",
@@ -61,6 +55,19 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
             headerClassName: 'super-app-theme--header',
         },
         {
+            field: "updatedById",
+            headerName: "Người đăng ký",
+            width: 120,
+            headerClassName: 'super-app-theme--header',
+        },
+        {
+            field: "need",
+            headerName: "Cần TN",
+            width: 120,
+            renderCell: (params) => params.value,
+            headerClassName: 'super-app-theme--header'
+        },
+        {
             field: "updatedTime",
             headerName: "Ngày ĐK",
             width: 200,
@@ -72,12 +79,7 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
             width: 120,
             headerClassName: 'super-app-theme--header',
         },
-        {
-            field: "updatedById",
-            headerName: "Người đăng ký",
-            width: 120,
-            headerClassName: 'super-app-theme--header',
-        },
+
     ];
 
     return (

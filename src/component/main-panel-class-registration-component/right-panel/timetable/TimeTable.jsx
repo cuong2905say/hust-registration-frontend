@@ -1,4 +1,4 @@
-import {Grid} from "@mui/material";
+import {Grid, Paper} from "@mui/material";
 import {ViewState} from "@devexpress/dx-react-scheduler";
 import {
     Appointments,
@@ -103,7 +103,7 @@ const getDataSchedulerForTimetable = (
         allTimeTable.forEach((item) => {
             if (item.week.includes(week)) {
                 result.push({
-                    title: item.classId,
+                    title: '('+item.classType+') '+(item.courseName||item.courseNameE ),
                     startDate: getDateStringData(
                         dayStartYear,
                         week,
@@ -186,22 +186,20 @@ export const TimetableViewByWeek = (props) => {
                                 return (
                                     <WeekView.DayScaleEmptyCell
                                         {...props}
-                                        style={{padding: 0, margin: 0}}
-                                        children={
-                                            <div
-                                                style={{
-                                                    paddingTop: 10,
-                                                    margin: 0,
-                                                    backgroundColor: "white",
-                                                    color: "black",
-                                                    textAlign: "center",
-                                                    fontWeight: "bold",
-                                                }}
-                                            >
-                                                Tuần {index + startWeek}
-                                            </div>
-                                        }
-                                    />
+                                        style={{padding: 0, margin: 0}}>
+                                        <div
+                                            style={{
+                                                paddingTop: 10,
+                                                margin: 0,
+                                                backgroundColor: "white",
+                                                color: "black",
+                                                textAlign: "center",
+                                                fontWeight: "bold",
+                                            }}
+                                        >
+                                            Tuần {index + startWeek}
+                                        </div>
+                                    </WeekView.DayScaleEmptyCell>
                                 );
                             }}
                             timeTableCellComponent={(props) => {
@@ -218,9 +216,9 @@ export const TimetableViewByWeek = (props) => {
                                 return (
                                     <Appointments.AppointmentContent
                                         {...props}
-                                        style={{color: "white"}}
-                                        children={props.data.title}
-                                    />
+                                        style={{color: "white"}}>
+                                        {props.data.title}
+                                    </Appointments.AppointmentContent>
                                 );
                             }}
                         />
@@ -231,44 +229,113 @@ export const TimetableViewByWeek = (props) => {
     );
 };
 
-export const TimetableViewBySingleWeek = (props) =>{
+export const TimetableViewBySingleWeek = (props) => {
     const {registedClass = [], semester = ""} = props;
 
     const [dayStartYear, setDayStartYear] = useState(null);
 
-    const fetchDayStartYear = async (semester) => {
-        const data = await getDayStartYear(semester.slice(0, 4));
-        setDayStartYear(new Date(data));
-    };
+    const [currentDate, setCurrentDate] = useState(undefined)
 
-    useEffect(() => {
-        fetchDayStartYear(semester);
-    }, [semester]);
-
-    // TODO: week
-
-    if (!registedClass || registedClass.length === 0) return <></>;
+    const [data, setData] = useState([])
     const {startWeek, endWeek, allTimeTable} = getAllTimetable(registedClass);
 
-    const data = getDataSchedulerForTimetable(
-        startWeek,
-        endWeek,
-        allTimeTable,
-        dayStartYear
-    );
+    useEffect(() => {
+        setData(getDataSchedulerForTimetable(
+            startWeek,
+            endWeek,
+            allTimeTable,
+            dayStartYear
+        ))
+    }, [allTimeTable, dayStartYear, endWeek, registedClass, startWeek]);
 
+
+    useEffect(() => {
+        const fetchDayStartYear = async (semester) => {
+            setDayStartYear(new Date(await getDayStartYear(semester.slice(0, 4))));
+        };
+        fetchDayStartYear(semester);
+    }, [semester]);
+    const [currentWeek,setCurrentWeek] = useState(1);
+
+    const handleDateChange = (date) => {
+        const dateDiffirent = (date-dayStartYear)/86400000
+        const weekDiffirent = dateDiffirent/7
+        setCurrentWeek(weekDiffirent)
+        setCurrentDate(date)
+    }
+
+
+    if (!registedClass || registedClass.length === 0) return <></>;
     return (
-        <Grid container>
-            <Grid item>
-                <Scheduler data = {data} >
-                    <ViewState
-                        currentDate={offSetWeek(dayStartYear,startWeek)}
-                        currentViewName={'Week'}
-                    />
+        <Paper>
+            <Scheduler data={data} title={"siuuuuuuu"}>
+                <ViewState
+                    // currentViewName={"Week"}
+                    currentDate={currentDate || offSetWeek(dayStartYear, startWeek)}
+                    onCurrentDateChange={handleDateChange}
+                />
+                <Toolbar/>
+                <DateNavigator/>
 
-                </Scheduler>
-            </Grid>
-        </Grid>
+                <WeekView
+                    startDayHour={6}
+                    endDayHour={18}
+                    cellDuration={120}
+                    name="Tuần 1"
+                    dayScaleCellComponent={(props) => {
+                        return (
+                            <WeekView.DayScaleCell
+                                {...props}
+                                hasRightBorder={true}
+                                style={{
+                                    padding: 0,
+                                    margin: 0,
+                                }}
+                            />
+                        );
+                    }}
+                    dayScaleEmptyCellComponent={(props) => {
+                        return (
+                            <WeekView.DayScaleEmptyCell
+                                {...props}
+                                style={{padding: 0, margin: 0}}>
+                                <div
+                                    style={{
+                                        paddingTop: 10,
+                                        margin: 0,
+                                        backgroundColor: "white",
+                                        color: "black",
+                                        textAlign: "center",
+                                        fontWeight: "bold",
+                                    }}
+                                >
+                                    Tuần {currentWeek}
+                                </div>
+                            </WeekView.DayScaleEmptyCell>
+                        )
+                    }}
+                    timeTableCellComponent={(props) => {
+                        return (
+                            <WeekView.TimeTableCell
+                                {...props}
+                                style={{padding: 0, margin: 0}}
+                            />
+                        );
+                    }}
+                />
+                <Appointments
+                    appointmentContentComponent={(props) => {
+                        return (
+                            <Appointments.AppointmentContent
+                                {...props}
+                                style={{color: "white"}}
+                                children={props.data.title}
+                            />
+                        );
+                    }}
+                />
+            </Scheduler>
+        </Paper>
     )
 }
 
@@ -304,22 +371,20 @@ export const TimetableViewBySingleMonth = (props) => {
 
 
     return (
-        <Grid container spacing={2}>
-            <Grid item>
-                <Scheduler data={data} title={"siuuuuuuu"}>
-                    <ViewState
-                        currentViewName={"Month"}
-                        currentDate={currentDate || offSetWeek(dayStartYear, startWeek)}
-                        onCurrentDateChange={handleDateChange}
-                    />
-                    <Toolbar/>
-                    <DateNavigator/>
-                    <MonthView/>
-                    <Appointments/>
-                </Scheduler>
-            </Grid>
-        </Grid>
-    );
+        <Paper>
+            <Scheduler data={data} title={"siuuuuuuu"}>
+                <ViewState
+                    currentViewName={"Month"}
+                    currentDate={currentDate || offSetWeek(dayStartYear, startWeek)}
+                    onCurrentDateChange={handleDateChange}
+                />
+                <Toolbar/>
+                <DateNavigator/>
+                <MonthView/>
+                <Appointments/>
+            </Scheduler>
+        </Paper>
+    )
 };
 
 export const DefaultTimetable = (props) => {
