@@ -58,7 +58,7 @@ const getAllTimetable = (registedClass) => {
                 week: week,
                 weekNotParse: ttb.week,
                 place: ttb.place,
-                dayOfWeek: ttb.dayOfWeek,
+                dayOfWeek: ttb.dayOfWeek, // -1 because mon is 1 , tue is 2
             });
             startWeek = Math.min(...week, startWeek);
             endWeek = Math.max(...week, endWeek);
@@ -81,11 +81,11 @@ function pad(number) {
  * @param dayOfWeek
  * @param hour
  * @param minute
- * @return (yyyy-mm-ddThh:mm)
+ * @return String
  */
 const getDateStringData = (date, weekNumber, dayOfWeek, hour, minute) => {
     const dateTmp = new Date(date);
-    dateTmp.setDate(dateTmp.getDate() + dayOfWeek - 1 + (weekNumber - 1) * 7);
+    dateTmp.setDate(dateTmp.getDate() + dayOfWeek - 2 + (weekNumber - 1) * 7);
     const year = dateTmp.getFullYear();
     const month = pad(dateTmp.getMonth() + 1);
     const day = pad(dateTmp.getDate());
