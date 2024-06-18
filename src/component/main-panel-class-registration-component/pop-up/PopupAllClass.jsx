@@ -17,6 +17,7 @@ const style = {
 
 export const AllClassesPopup = ({onClosePopup, showPopup, data,initialFilter}) => {
 
+
     const columns = [
         {field: "id", headerName: "Mã lớp", flex: 15},
         {field: "courseId", headerName: "Mã HP", flex: 20},

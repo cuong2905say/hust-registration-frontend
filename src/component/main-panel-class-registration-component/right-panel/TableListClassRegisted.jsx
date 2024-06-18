@@ -1,15 +1,39 @@
 import React from "react";
 import {DataGrid} from "@mui/x-data-grid";
-import {Box} from "@mui/material";
+import {Box, Typography} from "@mui/material";
+
+const sumCreditRegisted = (dataClassRegisted) => {
+    const creditByEachCourse = new Map()
+    dataClassRegisted.forEach(cl => {
+        creditByEachCourse.set(cl.id, cl.credit)
+    })
+
+    let totalCredit = 0
+    for (let credit of creditByEachCourse.values()) {
+        totalCredit += credit
+    }
+    return totalCredit
+}
+
+const CustomFooterHasSumOfCredit = ({dataClassRegisted}) => {
+    console.log(dataClassRegisted)
+    return (
+        <Box sx={{p: 1, display: 'flex' }}>
+            <Typography >
+                Tổng số TC đã đăng ký: {sumCreditRegisted(dataClassRegisted)}
+            </Typography>
+        </Box>
+    );
+}
 
 
-const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegisted,studentInfo}) => {
+const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegisted, studentInfo}) => {
 
-    const isRowSelectable= ({row})=>{
-        if(row.classType==='LT'){
+    const isRowSelectable = ({row}) => {
+        if (row.classType === 'LT') {
             return false
         }
-        if(localStorage.getItem('role')==='ROLE_ADMIN'){
+        if (localStorage.getItem('role') === 'ROLE_ADMIN') {
             return true
         }
         return row.updatedById === studentInfo.email;
@@ -83,15 +107,20 @@ const TableListClassRegisted = ({dataClassRegisted, setSelectedRowTableClassRegi
     ];
 
     return (
-        <Box sx = {{
-            '& .super-app-theme--header':{
+        <Box sx={{
+            '& .super-app-theme--header': {
                 backgroundColor: 'rgba(200, 244, 244, 0.238)',
-                fontWeight:'bold'
+                fontWeight: 'bold'
             },
-            minHeight:'250px'
+            minHeight: '250px'
         }}>
             <DataGrid
-                // slots={}
+                slots={{
+                    footer: CustomFooterHasSumOfCredit
+                }}
+                slotProps={{
+                    footer: {dataClassRegisted}
+                }}
                 sx={{
                     m: 2,
                     boxShadow: 2,
