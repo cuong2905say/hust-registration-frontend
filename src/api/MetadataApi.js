@@ -2,11 +2,11 @@ import {client} from "./Axios.js";
 import {toast} from "react-toastify";
 import * as Constants from "../util/constants/Constant.js"
 
-export const getDayStartYear = async (year) => {
+export const getDayStartYear = async (semester) => {
     try {
-        const {data} = await client.get('/public/metadata', {
+        const {data} = await client.get('/metadata', {
             params: {
-                semester: year + '1',
+                semester: semester.slice(0,4) + '1',
                 key: Constants.START_WEEK_1
             }
         })
@@ -17,9 +17,19 @@ export const getDayStartYear = async (year) => {
     }
 }
 
+export const getCurrentSemester = async () => {
+    try{
+        const {data} = await client.get('/metadata/current-semester')
+        return data.data
+    }catch (err){
+        toast.error("Không có dữ liệu về kì học hiện tại")
+        throw err
+    }
+}
+
 export const getMetadataSemester = async (semester) => {
     try {
-        const {data} = await client.get('/public/metadata/get-by-semester', {
+        const {data} = await client.get('/metadata/get-by-semester', {
             params:{
                 semester:semester
             }

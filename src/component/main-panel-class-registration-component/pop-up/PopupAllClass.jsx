@@ -2,7 +2,6 @@ import {useEffect, useState} from "react";
 import {FaTimes} from "react-icons/fa";
 import {DataGrid} from "@mui/x-data-grid";
 import {Box, Button, Modal, Typography} from "@mui/material";
-import {getAllClass} from "../../../api/PublicApi.js";
 
 const style = {
     position: "absolute",

@@ -5,9 +5,8 @@ import {Box, Typography} from "@mui/material";
 const sumCreditRegisted = (dataClassRegisted) => {
     const creditByEachCourse = new Map()
     dataClassRegisted.forEach(cl => {
-        creditByEachCourse.set(cl.id, cl.credit)
+        creditByEachCourse.set(cl.courseId, cl.credit)
     })
-
     let totalCredit = 0
     for (let credit of creditByEachCourse.values()) {
         totalCredit += credit
@@ -16,7 +15,6 @@ const sumCreditRegisted = (dataClassRegisted) => {
 }
 
 const CustomFooterHasSumOfCredit = ({dataClassRegisted}) => {
-    console.log(dataClassRegisted)
     return (
         <Box sx={{p: 1, display: 'flex' }}>
             <Typography >

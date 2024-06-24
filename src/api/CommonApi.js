@@ -16,4 +16,18 @@ export const getClassesByCourseId = async (semester, courseId) => {
     }
 }
 
+export const getAllClass = async (semester) => {
+    try {
+        const {data} = await client.get('/classes/get-by-semester', {
+            params: {
+                semester: semester
+            }
+        })
+        return data.data
+    } catch (err) {
+        toast.error('Lấy danh sách lớp thất bại' + err.response.data.message)
+        throw err
+    }
+}
+
 

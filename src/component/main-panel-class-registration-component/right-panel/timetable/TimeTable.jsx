@@ -158,7 +158,7 @@ export const TimetableViewByWeek = (props) => {
 
     return (
         <Grid container spacing={3}>
-            {Array.from({length: 10}, (_, index) => (
+            {Array.from({length: endWeek-startWeek+1}, (_, index) => (
                 <Grid item key={index}>
                     <Scheduler data={data} title={"siuuuuuuu"}>
                         <ViewState
@@ -255,12 +255,12 @@ export const TimetableViewBySingleWeek = (props) => {
         };
         fetchDayStartYear(semester);
     }, [semester]);
-    const [currentWeek,setCurrentWeek] = useState(1);
+    const [currentWeek,setCurrentWeek] = useState(startWeek);
 
     const handleDateChange = (date) => {
         const dateDiffirent = (date-dayStartYear)/86400000
         const weekDiffirent = dateDiffirent/7
-        setCurrentWeek(weekDiffirent)
+        setCurrentWeek(weekDiffirent+1)
         setCurrentDate(date)
     }
 

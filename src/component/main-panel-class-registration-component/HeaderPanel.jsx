@@ -35,8 +35,8 @@ const HeaderPanel = ({name}) => {
                     <img
                         alt=""
                         src="/image-4@2x.png"
-                        width="50"
-                        height="50"
+                        width="50px"
+                        height="50px"
                     />
                 </Box>
                 <Box sx={{marginLeft: "10px"}}>
@@ -54,9 +54,6 @@ const HeaderPanel = ({name}) => {
                 }}
             >
                 <Box sx={{display: "flex", alignItems: "center"}}>
-                    {/*<Badge badgeContent={4} color="primary">*/}
-                    {/*  <NotificationsIcon color="inherit" />*/}
-                    {/*</Badge>*/}
                     <Typography sx = {{marginRight:'20px'}}>{name}</Typography>
                     <Button
                         style={{

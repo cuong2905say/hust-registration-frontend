@@ -22,6 +22,7 @@ import {getClassStudentRegisted, registerClassByAdmin, unRegisterClassByAdmin} f
 
 const RightPanel = (props) => {
     const {
+        registerLabel = '??????????????',
         handleChangeSemesterValue = null,
         semester = '20231',
         dataAllClass = [],
@@ -158,7 +159,7 @@ const RightPanel = (props) => {
                 }}
             >
                 <Typography textAlign="left" fontWeight="bold" fontSize="20px">
-                    TRANG ĐĂNG KÝ SINH VIÊN
+                    {registerLabel}
                 </Typography>
                 <SemesterSelector
                     value={semester}

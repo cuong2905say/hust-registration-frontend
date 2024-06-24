@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {login} from "../api/AuthApi.js";
 import {useNavigate} from "react-router-dom";
-import {Box, Button, Divider, Icon, Link, Modal, TextField, Typography,} from "@mui/material";
+import {Box, Button, Divider, Link, Modal, TextField, Typography,} from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
 const style = {
@@ -22,6 +22,7 @@ function LoginPopup({showPopup, closePopup}) {
 
     const handleLogin = async () => {
         const data = await login(email, password);
+        console.log(data)
         if (data) {
             navigate("/register-class");
         }
@@ -75,7 +76,8 @@ function LoginPopup({showPopup, closePopup}) {
                             fontWeight: "bold",
                         }}
                     >
-                        <img src={"https://qldt.hust.edu.vn/images/office-365.svg"} style={{width:'15px', marginRight:'5px'}} alt={''}></img>
+                        <img src={"https://qldt.hust.edu.vn/images/office-365.svg"}
+                             style={{width: '15px', marginRight: '5px'}} alt={''}></img>
                         Office 365
                     </Button>
                 </Box>
@@ -106,17 +108,17 @@ function LoginPopup({showPopup, closePopup}) {
                         sx={{
                             backgroundColor: "inherit",
                             borderColor: 'white',
-                            outlineColor:'white',
+                            outlineColor: 'white',
                             color: 'white',
                             borderRadius: "5px",
-                            "& .MuiOutlinedInput-notchedOutline":{
-                                borderColor:'white',
-                                color:'white'
+                            "& .MuiOutlinedInput-notchedOutline": {
+                                borderColor: 'white',
+                                color: 'white'
                             },
 
-                            "& .MuiOutlinedInput-outlined":{
-                                borderColor:'white',
-                                color:'white'
+                            "& .MuiOutlinedInput-outlined": {
+                                borderColor: 'white',
+                                color: 'white'
                             },
                             input: {
                                 color: 'white'
@@ -140,17 +142,17 @@ function LoginPopup({showPopup, closePopup}) {
                         sx={{
                             backgroundColor: "inherit",
                             borderColor: 'white',
-                            outlineColor:'white',
+                            outlineColor: 'white',
                             color: 'white',
                             borderRadius: "5px",
-                            "& .MuiOutlinedInput-notchedOutline":{
-                                borderColor:'white',
-                                color:'white'
+                            "& .MuiOutlinedInput-notchedOutline": {
+                                borderColor: 'white',
+                                color: 'white'
                             },
 
-                            "& .MuiOutlinedInput-outlined":{
-                                borderColor:'white',
-                                color:'white'
+                            "& .MuiOutlinedInput-outlined": {
+                                borderColor: 'white',
+                                color: 'white'
                             },
                             input: {
                                 color: 'white'

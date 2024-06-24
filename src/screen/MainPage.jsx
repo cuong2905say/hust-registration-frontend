@@ -4,9 +4,11 @@ import RightPanel from "../component/main-panel-class-registration-component/Rig
 import {useEffect, useState} from "react";
 import {AllClassesPopup} from "../component/main-panel-class-registration-component/pop-up/PopupAllClass.jsx";
 import {Box, Grid} from "@mui/material";
-import {getAllClass} from "../api/PublicApi.js";
+import {getAllClass} from "../api/CommonApi.js";
 import {getMyInfo} from "../api/UserApi.js";
 import {getStudentInfo} from "../api/AdminApi.js";
+import {getCurrentSemester, getMetadataSemester} from "../api/MetadataApi.js";
+import * as Constant from "../util/constants/Constant.js";
 
 const MainPage = () => {
     const [isOpenAllClasses, setOpenAllClasses] = useState(false);
@@ -30,6 +32,10 @@ const MainPage = () => {
     const getStudentInfoByAdmin = async (studentId)=>{
         const data = await getStudentInfo(studentId);
         setStudentInfo(data)
+    }
+
+    const fetchCurrentSemester = async ()=>{
+        setSemester(await getCurrentSemester())
     }
 
     const fetchDataAllClasses = async () => {
@@ -63,12 +69,58 @@ const MainPage = () => {
         setDataAllClass(newData)
     }
 
-    const fetchMetadataSemester = () => {
-        // TODO: fetch semester
+    const [startYear, setStartYear] = useState(null)
+    const [startOfficialElitech, setStartOfficialElitech] = useState()
+    const [endOfficialElitech, setEndOfficialElitech] = useState(null)
+    const [startOfficialStandard, setStartOfficialStandard] = useState(null)
+    const [endOfficialStandard, setEndOfficialStandard] = useState(null)
+    const [startUnofficialElitech, setStartUnofficialElitech] = useState(null)
+    const [endUnofficialElitech, setEndUnofficialElitech] = useState(null)
+    const [startUnofficialStandard, setStartUnofficialStandard] = useState(null)
+    const [endUnofficialStandard, setEndUnofficialStandard] = useState(null)
+    const [startFree, setStartFree] = useState(null)
+    const [endFree, setEndFree] = useState(null)
+
+    const getCurrentStatusRegister = ()=>{
+        const currentDate = new Date().toISOString()
+        if(startOfficialElitech<=currentDate&&currentDate<=endOfficialElitech){
+            return `ĐK chính thức: CT ELITECH ${startOfficialElitech} -> ${endOfficialElitech}`
+        }else if(startOfficialStandard<=currentDate && currentDate<=endOfficialStandard){
+            return `ĐK chính thức: CT Chuẩn ${startOfficialStandard} -> ${endOfficialStandard}`
+        }else if(startUnofficialElitech<=currentDate && currentDate<=endUnofficialElitech){
+            return `ĐK điều chỉnh: CT ELITECH ${startUnofficialElitech} -> ${endUnofficialElitech}`
+        }else if(startUnofficialStandard<=currentDate && currentDate <= endUnofficialStandard){
+            return `ĐK điều chỉnh: CT Chuẩn ${startUnofficialStandard} -> ${endUnofficialStandard}`
+        }else if(startFree<=currentDate && currentDate<=endFree){
+            return `ĐK tự do ${startFree} -> ${endFree}`
+        }
+        return 'Chưa đến giờ đăng kí'
     }
 
+    const fetchMetadataSemester = async (currentSemester) => {
+        const data = await getMetadataSemester(currentSemester)
+        const jsonData = data.reduce((obj, item) => {
+            obj[item.metadataPk.metadataKey] = item.value;
+            return obj;
+        }, {});
+        setStartYear(jsonData[Constant.START_WEEK_1])
+        setStartOfficialElitech(jsonData[Constant.START_REGISTER_CLASS_OFFICIAL_ELITECH])
+        setEndOfficialElitech(jsonData[Constant.END_REGISTER_CLASS_OFFICIAL_ELITECH])
+        setStartOfficialStandard(jsonData[Constant.START_REGISTER_CLASS_OFFICIAL_STANDARD])
+        setEndOfficialStandard(jsonData[Constant.END_REGISTER_CLASS_OFFICIAL_STANDARD])
+        setStartUnofficialElitech(jsonData[Constant.START_REGISTER_CLASS_UNOFFICIAL_ELITECH])
+        setEndUnofficialElitech(jsonData[Constant.END_REGISTER_CLASS_UNOFFICIAL_ELITECH])
+        setStartUnofficialStandard(jsonData[Constant.START_REGISTER_CLASS_UNOFFICIAL_STANDARD])
+        setEndUnofficialStandard(jsonData[Constant.END_REGISTER_CLASS_UNOFFICIAL_STANDARD])
+        setStartFree(jsonData[Constant.START_REGISTER_FREE])
+        setEndFree(jsonData[Constant.END_REGISTER_FREE])
+    }
     useEffect(() => {
-        fetchMetadataSemester()
+        fetchCurrentSemester()
+    }, []);
+
+    useEffect(() => {
+        fetchMetadataSemester(semester)
         getInfo()
         fetchDataAllClasses()
     }, [semester]);
@@ -93,6 +145,7 @@ const MainPage = () => {
                 </Grid>
                 <Grid item xs={9}>
                     <RightPanel
+                        registerLabel = {getCurrentStatusRegister()}
                         handleChangeSemesterValue={handleChangeSemesterValue}
                         semester={semester}
                         dataAllClass={dataAllClass}

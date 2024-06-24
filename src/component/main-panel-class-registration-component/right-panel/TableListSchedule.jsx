@@ -14,6 +14,12 @@ const TableListSchedule = ({ semester }) => {
     }
   };
 
+  const customFooter = ()=>{
+    return(
+        <Box></Box>
+    )
+  }
+
   // useEffect(() => {
   //   const fetchData = async () => {
   //     const data = await getRegistedClass("20231");
@@ -100,8 +106,12 @@ const TableListSchedule = ({ semester }) => {
         //     paginationModel: { page: 0, pageSize: 10 },
         //   },
         // }}
+        slots={{
+          footer:{customFooter}
+        }}
         pageSizeOptions={[5,10,20,50, 100]}
         disableColumnFilter
+        disableColumnSorting
       />
     </Box>
   );
