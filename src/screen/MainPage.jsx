@@ -81,18 +81,39 @@ const MainPage = () => {
     const [startFree, setStartFree] = useState(null)
     const [endFree, setEndFree] = useState(null)
 
+    const getFormatedDate = (isoDateString) =>{
+        const date = new Date(isoDateString);
+
+        const hours = String(date.getUTCHours()).padStart(2, '0');
+        const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+
+        const year = date.getUTCFullYear();
+        const month = String(date.getUTCMonth() + 1).padStart(2, '0'); // Tháng được tính từ 0 nên cần +1
+        const day = String(date.getUTCDate()).padStart(2, '0');
+
+        return `${hours}:${minutes} ${year}-${month}-${day}`
+    }
+
+    const toIso8601AsUTC7 = (date)=>{
+        date.setHours(date.getHours()+7);
+        return date.toISOString()
+    }
+
     const getCurrentStatusRegister = ()=>{
-        const currentDate = new Date().toISOString()
-        if(startOfficialElitech<=currentDate&&currentDate<=endOfficialElitech){
-            return `ĐK chính thức: CT ELITECH ${startOfficialElitech} -> ${endOfficialElitech}`
-        }else if(startOfficialStandard<=currentDate && currentDate<=endOfficialStandard){
-            return `ĐK chính thức: CT Chuẩn ${startOfficialStandard} -> ${endOfficialStandard}`
-        }else if(startUnofficialElitech<=currentDate && currentDate<=endUnofficialElitech){
-            return `ĐK điều chỉnh: CT ELITECH ${startUnofficialElitech} -> ${endUnofficialElitech}`
-        }else if(startUnofficialStandard<=currentDate && currentDate <= endUnofficialStandard){
-            return `ĐK điều chỉnh: CT Chuẩn ${startUnofficialStandard} -> ${endUnofficialStandard}`
-        }else if(startFree<=currentDate && currentDate<=endFree){
-            return `ĐK tự do ${startFree} -> ${endFree}`
+        const currentDateString = toIso8601AsUTC7(new Date());
+        if(startOfficialElitech<=currentDateString&&currentDateString<=endOfficialElitech){
+            return `ĐK chính thức: CT ELITECH ${getFormatedDate(startOfficialElitech)} -> ${getFormatedDate(endOfficialElitech)}`
+        }else if(startOfficialStandard<=currentDateString && currentDateString<=endOfficialStandard){
+            return `ĐK chính thức: CT Chuẩn ${getFormatedDate(startOfficialStandard)} -> ${getFormatedDate(endOfficialStandard)}`
+        }else if(startUnofficialElitech<=currentDateString && currentDateString<=endUnofficialElitech){
+            return `ĐK điều chỉnh: CT ELITECH ${getFormatedDate(startUnofficialElitech)} -> ${getFormatedDate(endUnofficialElitech)}`
+        }else if(startUnofficialStandard<=currentDateString && currentDateString <= endUnofficialStandard){
+            console.log(startUnofficialStandard)
+            console.log(currentDateString)
+            console.log(endUnofficialStandard)
+            return `ĐK điều chỉnh: CT Chuẩn ${getFormatedDate(startUnofficialStandard)} -> ${getFormatedDate(endUnofficialStandard)}`
+        }else if(startFree<=currentDateString && currentDateString<=endFree){
+            return `ĐK tự do ${getFormatedDate(startFree)} -> ${endFree}`
         }
         return 'Chưa đến giờ đăng kí'
     }

@@ -14,8 +14,25 @@ const style = {
     boxShadow: 24,
 };
 
-export const AllClassesPopup = ({onClosePopup, showPopup, data,initialFilter}) => {
+export const AllClassesPopup = ({onClosePopup, showPopup, data, initialFilter}) => {
 
+    // const getStringTimetable = (timetables)=>{
+    //     console.log(timetables)
+    // }
+
+
+    const newData = data.map(e => {
+        return {
+            id: e.id,
+            courseId: e.courseId,
+            theoryClassId: e.theoryClassId,
+            semester: e.semester,
+            maxStudent: e.maxStudent,
+            classType: e.classType,
+            status: e.status,
+            timetables: (e.timetables)
+        }
+    })
 
     const columns = [
         {field: "id", headerName: "Mã lớp", flex: 15},
@@ -25,7 +42,7 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data,initialFilter}) =
         {field: "maxStudent", headerName: "Max SV", flex: 10},
         {field: "classType", headerName: "Loại lớp", flex: 25},
         {field: "status", headerName: "Trạng thái lớp", flex: 20},
-        {field: "timetables",headerName: "TKB",flex: 30}
+        {field: "timetables", headerName: "TKB", flex: 30}
     ];
 
     return (
@@ -61,7 +78,7 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data,initialFilter}) =
                 </Box>
 
                 <DataGrid
-                    rows={data}
+                    rows={newData}
                     columns={columns}
                     initialState={{
                         pagination: {
