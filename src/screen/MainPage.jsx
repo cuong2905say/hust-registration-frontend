@@ -108,12 +108,9 @@ const MainPage = () => {
         }else if(startUnofficialElitech<=currentDateString && currentDateString<=endUnofficialElitech){
             return `ĐK điều chỉnh: CT ELITECH ${getFormatedDate(startUnofficialElitech)} -> ${getFormatedDate(endUnofficialElitech)}`
         }else if(startUnofficialStandard<=currentDateString && currentDateString <= endUnofficialStandard){
-            console.log(startUnofficialStandard)
-            console.log(currentDateString)
-            console.log(endUnofficialStandard)
             return `ĐK điều chỉnh: CT Chuẩn ${getFormatedDate(startUnofficialStandard)} -> ${getFormatedDate(endUnofficialStandard)}`
         }else if(startFree<=currentDateString && currentDateString<=endFree){
-            return `ĐK tự do ${getFormatedDate(startFree)} -> ${endFree}`
+            return `ĐK tự do ${getFormatedDate(startFree)} -> ${getFormatedDate(endFree)}`
         }
         return 'Chưa đến giờ đăng kí'
     }

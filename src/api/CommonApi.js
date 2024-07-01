@@ -3,7 +3,7 @@ import {toast} from "react-toastify";
 
 export const getClassesByCourseId = async (semester, courseId) => {
     try {
-        const {data} = client.get('/common/classes/get-by-course-id', {
+        const {data} = client.get('/api/common/classes/get-by-course-id', {
             params: {
                 semester: semester,
                 courseId: courseId
@@ -18,7 +18,7 @@ export const getClassesByCourseId = async (semester, courseId) => {
 
 export const getAllClass = async (semester) => {
     try {
-        const {data} = await client.get('/classes/get-by-semester', {
+        const {data} = await client.get('/api/classes/get-by-semester', {
             params: {
                 semester: semester
             }

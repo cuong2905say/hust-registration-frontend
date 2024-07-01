@@ -2,8 +2,8 @@ import axios from "axios";
 import { getToken } from "./AuthApi.js";
 
 export const client = axios.create({
-    baseURL: "http://116.96.98.21:8080",
-  //   baseURL:'http://localhost:8080',
+    // baseURL: "http://116.96.98.21:8080",
+    baseURL:'http://localhost:8080',
 });
 
 const whiteList = ["/api/v1/auth", "/public"];

@@ -51,7 +51,7 @@ export const getStudentInfo = async (studentId) => {
 
 export const unRegisterClassByAdmin = async (studentEmail, semester, classIds = []) => {
     try {
-        const {data} = await client.delete('/admin/students/un-register-by-admin', {
+        const {data} = await client.delete('/api/admin/students/un-register-by-admin', {
             data: {
                 studentEmail: studentEmail,
                 semester: semester,
@@ -69,7 +69,7 @@ export const unRegisterClassByAdmin = async (studentEmail, semester, classIds = 
 export const registerClassByAdmin = async (studentEmail, semester, classIds = []) => {
     try {
         console.log(classIds)
-        const {data} = await client.post('/admin/students/register-by-admin', {
+        const {data} = await client.post('/api/admin/students/register-by-admin', {
             studentEmail: studentEmail,
             semester: semester,
             classIds: classIds

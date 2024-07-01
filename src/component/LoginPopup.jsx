@@ -81,17 +81,6 @@ function LoginPopup({showPopup, closePopup}) {
                         Office 365
                     </Button>
                 </Box>
-                <Link
-                    href="/forgot-password"
-                    sx={{
-                        color: "white",
-                        textDecorationColor: "white",
-                    }}
-                >
-                    <Typography textAlign="center" fontSize={14}>
-                        Quên mật khẩu?
-                    </Typography>
-                </Link>
                 <Box sx={{display: "flex", justifyContent: "center"}}>
                     <TextField
                         type="email"

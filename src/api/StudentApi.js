@@ -4,7 +4,7 @@ import {toast} from "react-toastify";
 
 export const getRegistedCourses = async (semester) => {
     try {
-        const {data} = await client.get('/students/courses/register-courses', {
+        const {data} = await client.get('/api/students/courses/register-courses', {
             params: {
                 semester: semester
             }
@@ -18,7 +18,7 @@ export const getRegistedCourses = async (semester) => {
 
 export const getRegistedClass = async (semester) => {
     try {
-        const {data} = await client.get('/students/classes/register-class', {
+        const {data} = await client.get('/api/students/classes/register-class', {
             params: {
                 semester: semester
             }
@@ -33,7 +33,7 @@ export const getRegistedClass = async (semester) => {
 
 export const unRegisterClass = async (semester, classIds = []) => {
     try {
-        const {data} = await client.delete('/students/classes/register-class', {
+        const {data} = await client.delete('/api/students/classes/register-class', {
             data: {
                 semester: semester,
                 classIds: classIds
@@ -50,7 +50,7 @@ export const unRegisterClass = async (semester, classIds = []) => {
 
 export const registerClass = async (semester, classIds = []) => {
     try {
-        const {data} = await client.post('/students/classes/register-class',
+        const {data} = await client.post('/api/students/classes/register-class',
             {
                 semester: semester,
                 classIds: classIds
@@ -66,7 +66,7 @@ export const registerClass = async (semester, classIds = []) => {
 
 export const registerCourse = async (semester, courseIds = []) => {
     try {
-        const {data} = await client.post('/students/courses/register-courses', {
+        const {data} = await client.post('/api/students/courses/register-courses', {
             semester: semester,
             courseIds: courseIds
         })
@@ -79,7 +79,7 @@ export const registerCourse = async (semester, courseIds = []) => {
 
 export const unRegisterCourse = async (semester, courseIds = []) => {
     try {
-        const {data} = client.delete('/students/courses/register-courses', {
+        const {data} = client.delete('/api/students/courses/register-courses', {
             data: {
                 semester: semester,
                 courseIds: courseIds
@@ -99,7 +99,7 @@ export const changeClassToSimilar = async (semester, oldClassId, newClassId) => 
         return;
     }
     try {
-        const {data} = await client.post('/students/classes/change-class', {
+        const {data} = await client.post('/api/students/classes/change-class', {
             semester: semester,
             oldClassId: oldClassId,
             newClassId: newClassId
