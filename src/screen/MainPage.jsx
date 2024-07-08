@@ -172,6 +172,7 @@ const MainPage = () => {
                 </Grid>
             </Grid>
             <AllClassesPopup
+                semester={semester}
                 onClosePopup={closeAllClassesPopup}
                 showPopup={isOpenAllClasses}
                 data={dataAllClass}

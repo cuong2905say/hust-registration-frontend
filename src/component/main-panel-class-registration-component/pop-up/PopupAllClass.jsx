@@ -9,16 +9,14 @@ const style = {
     left: "50%",
     transform: "translate(-50%, -50%)",
     width: 900,
+    height: '90vh',
     bgcolor: "white",
     borderRadius: "5px",
     boxShadow: 24,
 };
 
-export const AllClassesPopup = ({onClosePopup, showPopup, data, initialFilter}) => {
-
-    // const getStringTimetable = (timetables)=>{
-    //     console.log(timetables)
-    // }
+// eslint-disable-next-line react/prop-types
+export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
 
 
     const newData = data.map(e => {
@@ -63,10 +61,10 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, initialFilter}) 
                     <Typography
                         color="black"
                         fontSize={20}
-                        style={{padding: "10px", marginLeft: "40%"}}
+                        style={{padding: "10px", justifyContent:"center",alignItems:"center"}}
                         fontWeight="bold"
                     >
-                        Danh sách lớp mở
+                        Danh sách lớp mở trong kì {semester}
                     </Typography>
                     <Button
                         variant="text"
@@ -85,7 +83,9 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, initialFilter}) 
                             paginationModel: {page: 0, pageSize: 10},
                         },
                     }}
+                    // autoPageSize
                     pageSizeOptions={[5, 10]}
+
                 />
             </Box>
         </Modal>
