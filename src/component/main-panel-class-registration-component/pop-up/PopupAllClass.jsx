@@ -9,7 +9,7 @@ const style = {
     left: "50%",
     transform: "translate(-50%, -50%)",
     width: 900,
-    height: '90vh',
+    // height: '80vh',
     bgcolor: "white",
     borderRadius: "5px",
     boxShadow: 24,
@@ -76,6 +76,7 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
                 </Box>
 
                 <DataGrid
+                    sx={{height:'80vh'}}
                     rows={newData}
                     columns={columns}
                     initialState={{
@@ -83,9 +84,12 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
                             paginationModel: {page: 0, pageSize: 10},
                         },
                     }}
-                    // autoPageSize
-                    pageSizeOptions={[5, 10]}
-
+                    autoPageSize
+                    // pageSizeOptions={[5, 10]}
+                    disableRowSelectionOnClick
+                    onPageChange={page => {
+                        console.log(page)}}
+                    onPaginationModelChange={(e)=>{console.log(e)}}
                 />
             </Box>
         </Modal>
