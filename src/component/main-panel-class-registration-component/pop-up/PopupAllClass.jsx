@@ -1,14 +1,14 @@
 import {useEffect, useState} from "react";
 import {FaTimes} from "react-icons/fa";
 import {DataGrid} from "@mui/x-data-grid";
-import {Box, Button, Modal, Typography} from "@mui/material";
+import {Box, Button, Modal, TextField, Typography} from "@mui/material";
 
 const style = {
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 900,
+    width: 1200,
     // height: '80vh',
     bgcolor: "white",
     borderRadius: "5px",
@@ -40,7 +40,25 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
         {field: "maxStudent", headerName: "Max SV", flex: 10},
         {field: "classType", headerName: "Loại lớp", flex: 25},
         {field: "status", headerName: "Trạng thái lớp", flex: 20},
-        {field: "timetables", headerName: "TKB", flex: 30}
+        {
+            field: "timetables",
+            headerName: "TKB",
+            flex: 60,
+            renderCell: ({row})=> {
+                return  <Box sx={{display:'flex',flexDirection:'column',justifyItems:'center',alignItems:'center'}}>
+                    {
+                        row.timetables.map((timetable)=>{
+                            return <Box sx ={{}}>
+                                <Typography >
+                                    Thứ {timetable.dayOfWeek}, {timetable.place}, {timetable.from} => {timetable.to}, tuần {timetable.week}
+                                </Typography>
+                            </Box>
+                        })
+                    }
+                </Box>
+            }
+
+        }
     ];
 
     return (
@@ -77,6 +95,11 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
 
                 <DataGrid
                     sx={{height:'80vh'}}
+                    getRowHeight={(params) => {
+                        console.log(params)
+                        if(params.model.timetables.length <=1) return 50
+                        return params.model.timetables.length * 30
+                    }}
                     rows={newData}
                     columns={columns}
                     initialState={{
@@ -87,9 +110,11 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
                     autoPageSize
                     // pageSizeOptions={[5, 10]}
                     disableRowSelectionOnClick
-                    onPageChange={page => {
-                        console.log(page)}}
-                    onPaginationModelChange={(e)=>{console.log(e)}}
+                    // onPageChange={page => {
+                    //     // console.log(page)}
+                    // }
+                    // onPaginationModelChange={(e)=>{console.log(e)}}
+
                 />
             </Box>
         </Modal>
