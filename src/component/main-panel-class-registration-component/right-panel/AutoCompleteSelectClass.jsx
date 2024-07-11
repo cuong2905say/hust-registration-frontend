@@ -1,26 +1,38 @@
-import {Autocomplete, createFilterOptions, Stack, TextField} from "@mui/material";
+import {
+    Autocomplete,
+    createFilterOptions,
+    Stack,
+    TextField,
+} from "@mui/material";
 import React from "react";
 
 const defaultFilterOptions = createFilterOptions();
 
 const filterOption = (options, state) => {
-    return defaultFilterOptions(options, state).slice(0, 50)
-}
+    return defaultFilterOptions(options, state).slice(0, 50);
+};
 
-export const AutoCompleteSelectClass = ({handleChangeListClassIdSelected, dataAllClass}) => {
+export const AutoCompleteSelectClass = ({
+                                            value,
+                                            handleChangeListClassIdSelected,
+                                            dataAllClass,
+                                        }) => {
     return (
         <Stack spacing={3} sx={{width: 300}}>
             <Autocomplete
                 multiple
                 id="tags-filled"
-                options={dataAllClass.filter(cl=>cl.theoryClassId!=null).map((option) => option.id)}
+                options={dataAllClass
+                    .filter((cl) => cl.theoryClassId != null)
+                    .map((option) => {
+                        return `${option.id} - ${option.courseName}`;
+                    })}
                 freeSolo
                 filterSelectedOptions
                 filterOptions={filterOption}
-                // value={value}
+                value={value}
                 onChange={(event, newValue) => {
-                    console.log(newValue);
-                    handleChangeListClassIdSelected(newValue)
+                    handleChangeListClassIdSelected(newValue);
                 }}
                 // renderTags={(value, getTagProps) =>
                 //     value.map((option, index) => {
@@ -42,23 +54,33 @@ export const AutoCompleteSelectClass = ({handleChangeListClassIdSelected, dataAl
             />
         </Stack>
     );
-}
+};
 
-export const AutoCompleteSelectClassToChangeSimilar = ({selectedClassInRegistedTable,onChangeClassId, dataAllClass}) => {
-    if(!selectedClassInRegistedTable){
-        return <></>
+export const AutoCompleteSelectClassToChangeSimilar = ({
+                                                           selectedClassInRegistedTable,
+                                                           onChangeClassId,
+                                                           dataAllClass,
+                                                       }) => {
+    if (!selectedClassInRegistedTable) {
+        return <></>;
     }
     return (
         <Stack spacing={3} sx={{width: 300}}>
             <Autocomplete
                 id="tags-filled"
-                options={dataAllClass.filter(cl=>cl.theoryClassId!=null).filter(cl=>cl.courseId===selectedClassInRegistedTable.courseId && cl.classType === selectedClassInRegistedTable.classType).map((option) => option.id)}
+                options={dataAllClass
+                    .filter((cl) => cl.theoryClassId != null)
+                    .filter(
+                        (cl) =>
+                            cl.courseId === selectedClassInRegistedTable.courseId &&
+                            cl.classType === selectedClassInRegistedTable.classType
+                    )
+                    .map((option) => option.id)}
                 filterOptions={filterOption}
                 // value={value}
                 onChange={(event, newValue) => {
-                    onChangeClassId(newValue)
+                    onChangeClassId(newValue);
                 }}
-
                 renderInput={(params) => (
                     <TextField
                         {...params}
@@ -71,4 +93,4 @@ export const AutoCompleteSelectClassToChangeSimilar = ({selectedClassInRegistedT
             />
         </Stack>
     );
-}
+};

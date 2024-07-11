@@ -16,10 +16,13 @@ const style = {
 };
 
 // eslint-disable-next-line react/prop-types
-export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
-
-
-    const newData = data.map(e => {
+export const AllClassesPopup = ({
+                                    onClosePopup,
+                                    showPopup,
+                                    data,
+                                    semester,
+                                }) => {
+    const newData = data.map((e) => {
         return {
             id: e.id,
             courseId: e.courseId,
@@ -28,12 +31,16 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
             maxStudent: e.maxStudent,
             classType: e.classType,
             status: e.status,
-            timetables: (e.timetables)
-        }
-    })
+            timetables: e.timetables,
+        };
+    });
 
     const columns = [
-        {field: "id", headerName: "Mã lớp", flex: 15},
+        {
+            field: "id",
+            headerName: "Mã lớp",
+            flex: 15,
+        },
         {field: "courseId", headerName: "Mã HP", flex: 20},
         {field: "theoryClassId", headerName: "Mã lớp kèm", flex: 20},
         {field: "semester", headerName: "Kì", flex: 20},
@@ -44,21 +51,35 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
             field: "timetables",
             headerName: "TKB",
             flex: 60,
-            renderCell: ({row})=> {
-                return  <Box sx={{display:'flex',flexDirection:'column',justifyItems:'center',alignItems:'center'}}>
-                    {
-                        row.timetables.map((timetable)=>{
-                            return <Box sx ={{}}>
-                                <Typography >
-                                    Thứ {timetable.dayOfWeek}, {timetable.place}, {timetable.from} => {timetable.to}, tuần {timetable.week}
-                                </Typography>
-                            </Box>
-                        })
-                    }
-                </Box>
-            }
-
-        }
+            renderCell: ({row}) => {
+                return (
+                    <Box
+                        sx={{
+                            width: "100%",
+                            height: "100%",
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                        }}
+                    >
+                        {row.timetables.map((timetable) => {
+                            return (
+                                <Box
+                                    sx={{
+                                        // pb: 1,
+                                    }}
+                                >
+                                    <Typography>
+                                        Thứ {timetable.dayOfWeek}, {timetable.place},{" "}
+                                        {timetable.from} =&gt; {timetable.to}, tuần {timetable.week}
+                                    </Typography>
+                                </Box>
+                            );
+                        })}
+                    </Box>
+                );
+            },
+        },
     ];
 
     return (
@@ -79,7 +100,11 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
                     <Typography
                         color="black"
                         fontSize={20}
-                        style={{padding: "10px", justifyContent:"center",alignItems:"center"}}
+                        style={{
+                            padding: "10px",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
                         fontWeight="bold"
                     >
                         Danh sách lớp mở trong kì {semester}
@@ -94,11 +119,9 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
                 </Box>
 
                 <DataGrid
-                    sx={{height:'80vh'}}
+                    sx={{height: "80vh"}}
                     getRowHeight={(params) => {
-                        console.log(params)
-                        if(params.model.timetables.length <=1) return 50
-                        return params.model.timetables.length * 30
+                        return (50 < params.model.timetables.length * 30) ? params.model.timetables.length * 30 : 50
                     }}
                     rows={newData}
                     columns={columns}
@@ -114,7 +137,6 @@ export const AllClassesPopup = ({onClosePopup, showPopup, data, semester}) => {
                     //     // console.log(page)}
                     // }
                     // onPaginationModelChange={(e)=>{console.log(e)}}
-
                 />
             </Box>
         </Modal>
