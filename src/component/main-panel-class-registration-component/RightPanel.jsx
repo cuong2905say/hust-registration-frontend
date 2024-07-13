@@ -247,7 +247,7 @@ const RightPanel = (props) => {
                     alignItems: "center",
                 }}
             >
-                <Typography marginRight="10px">Đăng ký mã lớp</Typography>
+                {/*<Typography marginRight="10px">Đăng ký mã lớp</Typography>*/}
                 <AutoCompleteSelectClass
                     value={selectedClassIdToRegister}
                     handleChangeListClassIdSelected={setSelectedClassIdToRegister}

@@ -9,7 +9,7 @@ import React from "react";
 const defaultFilterOptions = createFilterOptions();
 
 const filterOption = (options, state) => {
-    return defaultFilterOptions(options, state).slice(0, 50);
+    return defaultFilterOptions(options, state).slice(0, 100);
 };
 
 export const AutoCompleteSelectClass = ({
@@ -18,14 +18,15 @@ export const AutoCompleteSelectClass = ({
                                             dataAllClass,
                                         }) => {
     return (
-        <Stack spacing={3} sx={{width: 300}}>
+        <Stack spacing={3} sx={{width: 450}}>
             <Autocomplete
                 multiple
                 id="tags-filled"
                 options={dataAllClass
-                    .filter((cl) => cl.theoryClassId != null)
+                    .filter((cl) => {
+                        return cl.theoryClassId !== null && cl.theoryClassId !==''})
                     .map((option) => {
-                        return `${option.id} - ${option.courseName}`;
+                        return `${option.id} - ${option.classType} - ${option.courseName}`;
                     })}
                 freeSolo
                 filterSelectedOptions

@@ -41,8 +41,9 @@ export const AllClassesPopup = ({
             headerName: "Mã lớp",
             flex: 15,
         },
-        {field: "courseId", headerName: "Mã HP", flex: 20},
         {field: "theoryClassId", headerName: "Mã lớp kèm", flex: 20},
+        {field: "courseId", headerName: "Mã HP", flex: 20},
+        {field: "courseName",headerName: "Tên HP",flex: 50},
         {field: "semester", headerName: "Kì", flex: 20},
         {field: "maxStudent", headerName: "Max SV", flex: 10},
         {field: "classType", headerName: "Loại lớp", flex: 25},
@@ -50,7 +51,7 @@ export const AllClassesPopup = ({
         {
             field: "timetables",
             headerName: "TKB",
-            flex: 60,
+            flex: 90,
             renderCell: ({row}) => {
                 return (
                     <Box
@@ -123,7 +124,7 @@ export const AllClassesPopup = ({
                     getRowHeight={(params) => {
                         return (50 < params.model.timetables.length * 30) ? params.model.timetables.length * 30 : 50
                     }}
-                    rows={newData}
+                    rows={data}
                     columns={columns}
                     initialState={{
                         pagination: {
