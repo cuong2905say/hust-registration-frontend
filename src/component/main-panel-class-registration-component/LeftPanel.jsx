@@ -65,7 +65,7 @@ const LeftPanel = (props) => {
                 <StarOutlineIcon/>
                 <Typography
                     fontSize="14px"
-                >{`Họ và tên sinh viên `}
+                >{`Họ và tên `}
                 </Typography>
 
                 <Typography

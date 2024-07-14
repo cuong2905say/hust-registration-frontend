@@ -29,5 +29,18 @@ export const getAllClass = async (semester) => {
         throw err
     }
 }
+export const getCountAllClass = async (semester) => {
+    try {
+        const {data} = await client.get('/api/classes/count-all', {
+            params:{
+                semester: semester,
+            }
+        })
+        return data.data
+    }catch (err){
+        toast.error('Không thể lấy danh sách đăng kí '+err.response.data.message)
+        throw err
+    }
+}
 
 

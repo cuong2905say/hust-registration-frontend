@@ -8,7 +8,7 @@ const style = {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 1200,
+    width: 1300,
     // height: '80vh',
     bgcolor: "white",
     borderRadius: "5px",
@@ -22,36 +22,37 @@ export const AllClassesPopup = ({
                                     data,
                                     semester,
                                 }) => {
-    const newData = data.map((e) => {
-        return {
-            id: e.id,
-            courseId: e.courseId,
-            theoryClassId: e.theoryClassId,
-            semester: e.semester,
-            maxStudent: e.maxStudent,
-            classType: e.classType,
-            status: e.status,
-            timetables: e.timetables,
-        };
-    });
+    // const newData = data.map((e) => {
+    //     return {
+    //         id: e.id,
+    //         courseId: e.courseId,
+    //         theoryClassId: e.theoryClassId,
+    //         semester: e.semester,
+    //         maxStudent: e.maxStudent,
+    //         classType: e.classType,
+    //         status: e.status,
+    //         timetables: e.timetables,
+    //     };
+    // });
 
     const columns = [
         {
             field: "id",
             headerName: "Mã lớp",
-            flex: 15,
+            flex: 20,
         },
         {field: "theoryClassId", headerName: "Mã lớp kèm", flex: 20},
-        {field: "courseId", headerName: "Mã HP", flex: 20},
+        {field: "courseId", headerName: "Mã HP", flex: 22},
         {field: "courseName",headerName: "Tên HP",flex: 50},
-        {field: "semester", headerName: "Kì", flex: 20},
+        {field: "semester", headerName: "Kì", flex: 25},
+        {field: "currentStudent",headerName: "SL ĐK",flex:15},
         {field: "maxStudent", headerName: "Max SV", flex: 10},
         {field: "classType", headerName: "Loại lớp", flex: 25},
         {field: "status", headerName: "Trạng thái lớp", flex: 20},
         {
             field: "timetables",
             headerName: "TKB",
-            flex: 90,
+            flex: 110,
             renderCell: ({row}) => {
                 return (
                     <Box

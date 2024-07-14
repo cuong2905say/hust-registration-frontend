@@ -4,7 +4,7 @@ import RightPanel from "../component/main-panel-class-registration-component/Rig
 import {useEffect, useState} from "react";
 import {AllClassesPopup} from "../component/main-panel-class-registration-component/pop-up/PopupAllClass.jsx";
 import {Box, Grid} from "@mui/material";
-import {getAllClass} from "../api/CommonApi.js";
+import {getAllClass, getCountAllClass} from "../api/CommonApi.js";
 import {getMyInfo} from "../api/UserApi.js";
 import {getStudentInfo} from "../api/AdminApi.js";
 import {getCurrentSemester, getMetadataSemester} from "../api/MetadataApi.js";
@@ -40,7 +40,6 @@ const MainPage = () => {
 
     const fetchDataAllClasses = async () => {
         const data = await getAllClass(semester);
-
         const getClassTypeVietnamese = (type) => {
             switch (type) {
                 case "THEORY_EXERCISE":
@@ -53,11 +52,13 @@ const MainPage = () => {
                     return "TN/TH";
             }
         };
+        const countAllClasses = await getCountAllClass(semester)
 
         const newData = data.map((item) => {
             return {
                 id: item.id,
                 semester: item.semester + "-" + item.semesterType,
+                currentStudent:countAllClasses[item.id] || 0,
                 maxStudent: item.maxStudent,
                 theoryClassId: item.theoryClassId,
                 classType: getClassTypeVietnamese(item.classType),
