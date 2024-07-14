@@ -23,8 +23,11 @@ function LoginPopup({showPopup, closePopup}) {
     const handleLogin = async () => {
         const data = await login(email, password);
         console.log(data)
-        if (data) {
+        if (data && (data.role === "ROLE_STUDENT" || data.role === "ROLE_ADMIN")) {
             navigate("/register-class");
+        }
+        if(data && data.role ==="ROLE_SUPER_ADMIN"){
+            navigate("/super-admin")
         }
     };
 
