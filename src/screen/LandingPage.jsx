@@ -24,7 +24,7 @@ class LandingPage extends React.Component {
 
     render() {
         const css = {
-            backgroundImage: `url(assets/background.jpeg)`,
+            backgroundImage: `url(/background.jpeg)`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
