@@ -115,6 +115,10 @@ const RightPanel = (props) => {
     };
 
     const handleClickButtonChangeToSimilarClass = async () => {
+        if (selectedRowTableClassRegisted[0].classId === classIdToChangeToSimilar) {
+            toast.error('2 Lớp giống nhau')
+            throw '2 lớp giống nhau'
+        }
         await changeClassToSimilar(
             semester,
             selectedRowTableClassRegisted[0].classId,

@@ -96,7 +96,7 @@ export const unRegisterCourse = async (semester, courseIds = []) => {
 export const changeClassToSimilar = async (semester, oldClassId, newClassId) => {
     if (oldClassId === newClassId) {
         toast.error('2 lớp không thể giống nhau: ' + oldClassId)
-        return;
+        throw 'Err';
     }
     try {
         const {data} = await client.post('/api/students/classes/change-class', {
